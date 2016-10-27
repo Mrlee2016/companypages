@@ -1,0 +1,62 @@
+body {background-color: #f3f3f3;}
+
+header {height: 28px;}
+header .imgbox {width: 7px;height: 12px;}
+
+/*选择车品牌*/
+
+/*热销车型*/
+.carbrand .hotsalecars li {height: 40px;
+    width: 25%; box-sizing: border-box;-webkit-box-sizing: border-box; }
+
+
+.carbrand {display: flex; display: -webkit-flex;}
+.carbrand a {color: #1d2132;}
+.carbrand .left {width: 85%; overflow-y: auto;}
+.carbrand .right { width: 15%; overflow-x: auto;}
+.carbrand .right a { display: block;line-height: 40px; }
+.carbrand dl .imgbox { width: 30px; height:20px;}
+.carbrand dl dt { height: 30px;}
+.carbrand dl dt .tbl-type {height: 30px }
+.carbrand dl dd {background-color: #fff; border-bottom: 1px solid #ececec;}
+.carbrand dl dd:last-child {border-bottom:none; }
+.carbrand dl dd .tbl-type { height: 45px;}
+.carbrand dl dd .brandname { padding-left: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

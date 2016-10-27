@@ -1,0 +1,187 @@
+/*全局设置*/
+body.paylist {background-color: #F3F3F3;}
+
+/*选择框激活*/
+.tickbox.active {background-color:#00aaff}
+
+.storenamebox {height: 44px; line-height: 44px; color: #252525;overflow: hidden;}
+.storenamebox .imgbox {display:inline-block;width: 15px; height: 13px;background:url(../images/paylist/payicon.png) no-repeat;  background-size: 444% 253.84615%; margin-top: 15px; }
+.storenamebox .storename {padding-left: 5px; line-height: 15px;height:44px;max-width: 60%;  }
+
+/*星级评论s*/
+.store .storenamebox .starbox { display:inline-block; width: 62px; height: 12px; margin-top:15px; overflow: hidden;white-space: nowrap; background: url(/static/images/api/aiche/star5.png) no-repeat; background-size: 100% 200%; background-position: 0 -12px; }
+.store .storenamebox .starvalue-box {width: 55px; height:12px; overflow: hidden; display: block;}
+.store .storenamebox .starvalue {display: inline-block; height: 12px; background: url(/static/images/api/aiche/star5.png) no-repeat 0 0;background-size: 100% 200%; width: 63px; vertical-align: top;}
+.store .storenamebox .comment-score {padding-left: 3px; line-height: 44px; }
+
+
+/*订单详情*/
+.orderdetail {height: 88px; border-top: 1px solid #ececec; background-color: #f3f3f3;}
+.orderdetail .imgbox {display:inline-block;width: 68px; height: 68px; margin-top: 9px;}
+
+.orderdetail .txtbox {display: inline-block;vertical-align:top;max-width: 70%;padding-top:6px;padding-left: 10px; line-height: 24px;}
+.orderdetail .txtbox .servicename {height: 32px; line-height: 15px;}
+.orderdetail .txtbox .price {padding-top: 15px;}
+
+/*合计*/
+.store .totalbox { height: 44px; line-height: 44px;}
+.store .totalbox span {color: #fc0000;}
+.store .totalbox .useCard {display: none;}
+.store .totalbox span.active .normal {display: none;}
+.store .totalbox span.active .useCard {display: inline-block;}
+
+
+/*支付方式*/
+.paymentmode dl dt { height: 40px; background-color:#f3f3f3;line-height: 40px;}
+.paymentmode dl dd {height: 44px; border-bottom: 1px solid #ececec;line-height: 44px;}
+.paymentmode dl dd .imgbox {width:20px; height: 18px; background:url(../images/paylist/payicon.png) no-repeat;background-size: 300% 165%; margin-top: 12px;}
+
+
+/*支付方式调整*/
+.paymentmode dl dd.wechatpay .imgbox {background-position: 0 -13px;}
+.paymentmode dl dd.alipay .imgbox {background-position: -20px -13px;}
+.paymentmode dl dd.unionpay .imgbox {background-position: -40px -13px;}
+
+.paymentmode dl dd .tickbox { width: 21px; height: 21px; border: 1px solid #00aaff; border-radius: 50%; margin-top: 11px; }
+.paymentmode dl dd .tickbox .tick {width:6px; height: 12px;margin-top: 2px; }
+.paymentmode dl dd p.payname {padding-left: 5px;}
+
+/*选中支付方式*/
+.payitems {
+ display: none;}
+.paymentmode dl dd input[type="radio"]:checked + .tickbox {background-color:#00aaff ;}
+
+
+/*支付优惠券*/
+.pay-discount {color: #252525; margin-top:15px;}
+.pay-discount .discount-choicebox .choicename {height: 44px; border-top: 1px solid #ececec; line-height:15px; overflow: hidden;}
+.pay-discount .discount-choicebox .choicename .tbl-type { height: 44px; max-width: 80%;}
+.pay-discount .discount-choicebox .coupon .coupontit { line-height: 15px;height: 44px; max-width: 85%;}
+.pay-discount .discount-choicebox .coupon .coupontit .tbl-cell {text-align: left;}
+.pay-discount ul.choice-detail {max-height: 205px;overflow-y: auto;display: none; }
+.pay-discount .discount-choicebox .coupon input[type="checkbox"]:checked + label .tickbox {background-color: #00aaff;}
+
+
+ /*服务卡*/
+.pay-discount .discount-choicebox .serviceCard .serviceCardtit { height: 44px;
+ line-height: 15px; max-width: 85%; }
+.pay-discount .discount-choicebox .serviceCard .serviceCardtit .tbl-cell {text-align: left;}
+
+.serviceCard select {border: none; background-color: #00aaff;color: #fff; border-radius: 5px;}
+
+/*checkbox start*/
+.pay-discount .discount-choicebox  .switchbox {display: inline-block;  vertical-align: middle;  height: 20px;  width:40px; background-color: transparent;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;}
+.pay-discount .discount-choicebox  .switchbox .switch { display: inline-block;height: 20px;  width:40px; background-color: #b8b8b8;  top:10px;  left: 0; border-radius: 10px;}
+.pay-discount .discount-choicebox  .switchbox input[type="checkbox"]:checked + .switch {background-color: #00aaff!important;}
+.pay-discount .discount-choicebox  .switchbox .switch:after{position:absolute;display:block;content: "";
+ width: 18px;  height: 18px;background-color: #fff; border-radius: 50%;top: 1px;left: 1px; -webkit-transition: 400ms;
+
+}
+.pay-discount .discount-choicebox .switchbox input[type="checkbox"]:checked + .switch:after {
+ -webkit-transition: 200ms;
+ -moz-transition: 200ms;
+ -ms-transition: 200ms;
+ -o-transition: 200ms;
+ transition: 200ms;
+ -webkit-transform: translateX(20px);
+ -moz-transform: translateX(20px);
+ -ms-transform: translateX(20px);
+ -o-transform: translateX(20px);
+ transform: translateX(20px);
+}
+
+/*checkbox end*/
+
+
+.pay-discount ul.choice-detail li {height: 40px; background-color: #f3f3f3; border-top: 1px solid #ececec; line-height: 40px; font-size: 13px;}
+.pay-discount ul.choice-detail li.active {background-color: #ddd!important;}
+
+.pay-discount .discount-choicebox input { display: none;}
+.pay-discount .discount-choicebox label { display: block;}
+.pay-discount .discount-choicebox .tickbox {width: 21px; height: 21px; border: 1px solid #00aaff; border-radius: 2px ;margin-top: 11px;}
+.pay-discount .discount-choicebox .tickbox .tick {width:6px; height: 12px;margin-top: 2px;}
+.pay-discount .discount-choicebox input[type="checkbox"]:checked + label .choicename  div.tickbox {background-color: #00AAFF; }
+
+/*选中项目交互*/
+.pay-discount .discount-choicebox input[type="checkbox"]:checked + .choicename .tit .selected {display: table-cell; }
+.pay-discount .discount-choicebox input[type="checkbox"]:checked + .choicename .tit .unselected {display: none; }
+
+.pay-discount .discount-choicebox input[type="checkbox"] + .choicename .tit .arrow-down {
+ margin: 0 0 2px 7px!important;}
+.pay-discount .discount-choicebox input[type="checkbox"] + .choicename .tit .unselected {display:table-cell; }
+.pay-discount .discount-choicebox input[type="checkbox"] + .choicename .tit .selected {display:none; }
+
+
+.pay-discount .discount-choicebox input[type="checkbox"]:checked + .choicename label .tickbox {background-color: #00AAFF; }
+
+/*优惠券*/
+.pay-discount .discount-choicebox .arrow-down { display: inline-block; width:7px; height:7px;margin-right: 8px;margin-top: 12px}
+
+/*立即支付*/
+.paynow {height:44px;line-height:44px; color: #fff;  border: none; border-radius: 5px; background-color: #fc0000; margin-top: 31px; margin-bottom: 31px;}
+
+
+/*底部弹出*/
+/*.popMid { width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); top: 0; left: auto;*/
+ /*min-width: 320px; max-width: 640px;}*/
+
+.popMid {display: none;}
+.dialogContent .tit {text-align: left!important;padding-left: 10px;height: 40px;
+ line-height: 40px;}
+.dialogContent ul {text-align: left;border-top:1px solid #ececec; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.dialogContent ul li { height:40px;border-bottom: 1px solid #ececec; line-height: 15px;}
+.dialogContent ul li:last-child {border: none;}
+.dialogContent ul li.selected {color: #00aaff;}
+.dialogContent ul li p.tbl-cell {padding-left:10px;padding-right:10px; text-align: left!important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

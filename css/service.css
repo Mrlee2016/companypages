@@ -1,0 +1,94 @@
+/*本页公共样式*/
+
+body {background-color: #f3f3f3;}
+
+
+
+/*banner样式轮播处理*/
+/*.service-banner ul {width: 400%;}
+.service-banner ul li {width: 25%;  }*/
+/*购买*/
+.service-buy { height: 97px; }
+.service-buy .detail {line-height: 24px; color: #171c25;  }
+.service-buy .current-price {color: #ff0000; line-height: 18px; left: 3px; bottom: 17px;}
+.service-buy .old-pri {color: #939393; line-height: 14px; left: 53px; bottom: 19px;}
+.service-buy .buynow {width: 64px ; height: 32px; color:#fff; background-color: #ff1a1a; border-radius:3px; line-height: 32px; right: 0; bottom: 10px;}
+
+/*已售出*/
+.status {height: 22px;color: #565657; background-color: #dedede; line-height: 22px;margin-bottom: 10px; }
+.status .return {margin-right: 20px;}
+.status .return span,.status .sold span { display: inline-block; width: 12px; height: 12px;background: url(../../static/images/api/aiche/icon2.png) no-repeat ; background-size: 200% 100%; margin-right: 4px; margin-bottom: -1px; }
+.status .return span {background-position: 0 0;  }
+.status .sold span {background-position: -12px 0;}
+
+/*评论s*/
+.comments {margin-bottom: 10px;}
+.comments .commentbox dt { height: 34px; border-bottom: 1px solid #e5e3e3; border-top: 1px solid #e5e3e3;}
+.comments .commentbox dt .center-10px {height: 34px;}
+.comments .commentbox dt .comment-starbox { width: 70px; height: 13px; overflow: hidden; white-space: nowrap; left: 0; right: auto;}
+.comments .commentbox dt .comment-starbox ul.star { width: 70px; height: 13px; overflow: hidden; white-space: nowrap;  }
+.comments .commentbox dt .comment-starbox ul.star li { width: 13px; height: 13px;display:block;   background: url(../../static/images/api/aiche/star.png) no-repeat; background-size: 207.4074% 100%; float: left;margin-right: 1px;}
+
+/*星星调整*/
+.comments .commentbox dt .darkstar ul.star li {background-position: -15px 0; }
+.comments .commentbox dt .yellowstar ul.star li {background-position:0 0;   }
+ .comments .commentbox dt div.yellowstar { width: 48px; }
+ 
+/*评论*/
+.comments .commentbox dt .center-10px .morecomment {color: #6e6d6d; right: 0; left: auto; line-height: 34px;}
+.comments .commentbox dt .center-10px .arrowright {display: block; width:8px ; height: 8px; border-right: 1px solid #b4b4b4; border-bottom: 1px solid #b4b4b4; margin-top: 12px ; transform: rotate(-45deg); -webkit-transform: rotate(-45deg);  -ms-transform: rotate(-45deg);  }
+
+.comments .commentbox dd.cont {color: #000;}
+.comments .commentbox dd.cont p.detail { width: 97px; height: 31px;  line-height: 31px; border-radius: 3px; float: left; margin-left: 10px; margin-top: 10px;}
+.comments .commentbox dd.cont p.good {border: 1px solid #f9c877;}
+.comments .commentbox dd.cont p.bad {border: 1px solid #eee; background-color: #eee; color: #888787;}
+.comments .loadmore {color: #8b8a8a; line-height: 14px; padding-bottom: 4px; padding-top: 6px; }
+.comments .loadmore .arrow-down { width: 8px; height: 8px; display:inline-block;margin-bottom: 3px; }
+
+/*评论e*/
+
+
+/*附近商家*/
+.storenearby {margin-bottom: 10px;}
+.storenearby dl dt { height: 34px; border-bottom: 1px solid #e5e3e3; border-top: 1px solid #e5e3e3; }
+/*.storenearby dl dt div.center-10px {height: 34px;}*/
+.storenearby dl dt div.center-10px p { color:#161c24 ; line-height: 34px;} 
+.storenearby dl dt div.center-10px span.arrowright {display: inline-block; width:8px ; height: 8px; border-right: 1px solid #b4b4b4; border-bottom: 1px solid #b4b4b4; margin-top: 12px ; transform: rotate(-45deg); -webkit-transform: rotate(-45deg);  -ms-transform: rotate(-45deg); }
+
+/*.storenearby dl dd {overflow: hidden;}*/
+.storenearby dl dd ul.cont { /*width:300% ;*/padding-top: 10px; padding-left: 4px;/* overflow: hidden; white-space: nowrap;*/ }
+.storenearby dl dd ul.cont li {/*width: 13.77777%; */ /*float: left; *//*padding:0 9px; */line-height: 12px;}
+.storenearby dl dd ul.cont li a {color: #939393;}
+.storenearby dl dd ul.cont li .imgbox {border: 1px solid #f4f4f4; margin-bottom: 10px; }
+.storenearby dl dd ul.cont li .storename { line-height: 14px; padding-bottom: 3px;}
+.storenearby dl dd ul.cont li a .storename {color: #161c24;}
+
+.storenearby dl dd ul.cont li .distance {padding-bottom: 5px;}
+.storenearby dl dd ul.cont li .addr { padding-bottom: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+/*充值选择*/
+.tabbox {width: 93.75%;}
+.tabbox .selection {display:flex; display: -webkit-flex; padding-top: 17px;}
+.tabbox .selection li{ flex: 1; -webkit-flex: 1}
+.tabbox .selection li input {display: none;}
+.tabbox .selection li .imgbox { width: 70px;height: 70px; border-radius:50%; border:2px solid #FFF;}
+
+.tabbox .selection li input + label {display: block;}
+.tabbox .selection li input:checked + label .imgbox {border-color: #009944!important;}
+.tabbox .selection li input:checked + label .imgbox .tickbox { width: 13px;height: 13px; background-color:#009944; border-radius: 50%;
+    bottom: 0; right: 8px;}
+.tabbox .selection li .imgbox img {width: 43px;height:44px;}
+.tabbox .selection li .imgbox .tickbox  .tick {width: 5px;height: 8px;}
+.tabbox .choice {color: #747474; padding: 20px 0;}
+
+.inputbox {width:93.75%;}
+.inputbox input { font-size: 18px; border: 1px solid #d1d1d1; height:22px;border-radius:5px; padding:10px 0; text-indent: 10px;margin-bottom: 10px; }
+.inputbox .errortips {color: red;line-height: 12px; padding-left: 14px;
+    display:none;}
+
+.submitbtn { display: block;width:93.75%; height: 45px;border: none; border-radius: 5px; background-color:#00aaff; color: #fff; margin-top: 20px;}
+
+.statement {color: #747474; padding-top: 20px;}

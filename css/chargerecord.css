@@ -1,0 +1,35 @@
+/*充值记录*/
+.month { height: 35px; background-color:#ebeae8; }
+.month p {padding-left: 10px;}
+
+.cont li {height: 65px; border-bottom: 1px solid #ececec; overflow-x: hidden;}
+.cont li .time {width: 58px;  padding-left:10px;color: #888886; }
+.cont li .time p {line-height: 16px; }
+.cont li .imgbox {width: 40px;}
+.cont li .detail {padding-left: 20px;color: #4f4f4f;}
+.cont li .detail .money {line-height: 20px;}
+/*.cont li .detail i {padding-right: 5px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

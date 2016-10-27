@@ -1,0 +1,89 @@
+/*我的爱车钱包 账号页*/
+
+body.account {background-color:#f3f3f3 ;}
+/*顶部 个人信息*/
+.acount-top {height:136px ; background-color: #00aaff; color: #fff;}
+.acount-top div .infor-box {height: 91px;line-height: 16px;  }
+.acount-top div .infor-box div.imgbox {width:46px ; height:46px ;margin-top: 16px;  border: 2px solid #80d5ff; border-radius: 50%; background-color: #fff; }
+
+.acount-top div .infor-box div.imgbox i {display:block; width: 27px; height:26px; background: url(../images/account/logo.png) center center no-repeat; background-size: 100%; }
+
+.acount-top div .infor-box .account-nickname { left: 58px; top: 16px;}
+.acount-top div .infor-box .account-points { left: 58px; top: 36px;}
+.acount-top div .infor-box .account-balance { left: 58px; top: 60px;}
+.acount-top div .infor-box .account-balance span { padding-left: 6px;}
+
+.acount-top div .infor-box .account-bedge {width: 60px; height: 15px; background:url(../images/account/budge2.png) left center no-repeat; background-size: 100%; margin-top: 15px; }
+
+.acount-top ul.coupons { border-top: 1px solid #62cbff; }
+.acount-top ul.coupons li {width:49.9%;height: 40px;float: left; box-sizing: border-box;   }
+.acount-top ul.coupons li .iconbox {width: 26px; height: 26px; border-radius: 50%;  background: url(../images/account/coupons.png) no-repeat; background-size: 200% 100%; background-color: #038cd0; margin-left: 20%;  }
+.acount-top ul.coupons li .iconbox, .acount-top ul.coupons li .txtbox {margin-top: 8px;}
+.acount-top ul.coupons li .txtbox {line-height: 26px; margin-left: 12px;}
+
+@media only screen and (max-width:370px ) {
+	.acount-top ul.coupons li .txtbox {font-size: 15px;}
+} 
+@media only screen and (max-width:340px ){
+	.acount-top ul.coupons li .txtbox {font-size: 13px;}
+}
+
+ 
+.acount-top ul.coupons li.discount { border-right: 1px solid #62cbff; }
+.acount-top ul.coupons li.discount .iconbox { background-position: 0 0;}
+.acount-top ul.coupons li.carcoupon .iconbox { background-position: -26px 0;}
+
+/*爱车钱包选项详情*/
+section.account-cont {margin-top: 10px; }
+.account-cont dl.itemsbox,.account-cont dl.itemsbox a { color: #1d2132;}
+.account-cont dl.itemsbox dt.items {height: 44px; background-color: #fff; line-height: 44px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.account-cont dl.itemsbox dt.items .imgbox { width: 22px; height: 22px; background: url(../images/account/icons5.png) no-repeat; background-size: 620.45454% 100%; margin-top: 10px; margin-right: 9px;}
+.account-cont dl.itemsbox dt.items .arrow-right {width: 8px; height: 8px; margin-top: 16px;}
+
+/*对应背景修改*/
+.account-cont dl.reservation dt.items .imgbox {background-position: -23px 0;}
+.account-cont dl.recomment {margin-top: 10px;}
+.account-cont dl.recomment dt.items .imgbox {background-position: -46px 0;}
+.account-cont dl.share-star {margin-top: 10px;}
+.account-cont dl.share-star dt.items .imgbox {background-position: -69px 0;}
+.account-cont dl.car-friends dt.items .imgbox {background-position: -92px 0;}
+.account-cont dl.profit {margin-top: 10px;}
+.account-cont dl.profit dt.items .imgbox {background-position: -115px 0;}
+
+
+/*订单详情*/
+.account-cont dl.itemsbox  dd { height: 43px; width: 25%; display: block; float: left;text-align: center; font-size: 14px; line-height: 14px; padding-top: 5px; padding-bottom: 8px; }
+.account-cont dl.itemsbox  dd div.imgbox {width: 22px; height: 22px; background: url(../images/account/order.png) no-repeat ; background-size: 413.63636% 100%; }
+.account-cont dl.itemsbox  dd div.imgbox .num {  line-height: 12px; background-color: red; display: inline-block; background-size: 100%; color: #fff; top: -4px;  left: 20px; border-radius: 7px 7px 7px 0px; padding: 1px 2px; min-width: 12px; max-width: 30px;}
+
+/*对应修改*/
+.account-cont dl.itemsbox  dd.toPay div.imgbox {background-position: 0 0;}
+.account-cont dl.itemsbox  dd.paied div.imgbox {background-position: -23px 0;}
+.account-cont dl.itemsbox  dd.comment div.imgbox {background-position: -46px 0;}
+.account-cont dl.itemsbox  dd.done div.imgbox {background-position: -69px 0;}
+ 
+.account-cont dl.itemsbox   dd > p { padding-top: 9px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

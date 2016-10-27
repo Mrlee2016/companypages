@@ -1,0 +1,77 @@
+/*此页公共样式*/
+body {background-color: #232323;}
+
+/*页面上部分*/
+.card-top {  background-color: #ffda0e; border-top-left-radius: 5px; border-top-right-radius: 5px; margin-top: 20px;}
+.card-top div.txtbox { padding-left: 23px;}
+.card-top div.txtbox p.count {color: #5b0000; line-height: 23px; padding-top: 30px; padding-bottom: 11px;}
+.card-top div.txtbox p.del {color: #434343;line-height: 14px;}
+.card-top div.txtbox p.pri {color: #5b0000;line-height: 27px; padding-top: 32px; padding-bottom: 7px;}
+.card-top div.txtbox p.present {line-height: 12px; padding-bottom: 10px;}
+.card-top div.imgbox {width: 144px;  right:9px; top: -14px;}
+
+/*年卡中部*/
+
+
+@media screen and (min-width:350px ) {  
+	.card-mid dl  { font-size: 13px;}
+	.card-mid dl dd .arrow-right {width: 8px; height: 8px;}
+}
+@media screen and (max-width:350px ) {  
+	.card-mid dl  { font-size: 12px;}
+	.card-mid dl dd .arrow-right {width: 7px; height: 7px;}
+	
+}
+
+.card-mid dl dt { height: 40px; line-height: 40px;}
+.card-mid dl dt a { color: #454444;}
+.card-mid dl dd { height: 34px;  border-top: 1px solid #e4e4e4; line-height: 34px;}
+.card-mid dl dd a {color: #000;}
+.card-mid dl dd .arrow-right { border-right: 1px solid #9a9a9a; border-bottom: 1px solid #9a9a9a; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: (-45deg);-ms-transform: (-45deg); margin-top: 13px;}
+
+/*协议*/
+.agreenment {height:53px ; line-height: 14px; } 
+.agreenment p {padding-top: 10px; color: #7f7f7f;}
+.agreenment p  span {color: #0184dd;}
+
+/*价格*/
+.pricebox {height: 49px; line-height: 49px;}
+.pricebox p.price {color: #fc2323;}
+.pricebox p.buynow {width: 88px; height: 34px; background-color: #fc2323; border-radius: 3px;line-height: 34px; color: #fff; margin-top: 7px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

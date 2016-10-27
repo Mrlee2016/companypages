@@ -1,0 +1,39 @@
+body {background-color: #e6e6e6;}
+/*头部导航*/
+.top {height: 44px; background-color: #fff;}
+.top ul {display: flex; display:-webkit-flex; height: 44px; }
+.top ul li { height: 42px;flex: 1; line-height: 44px;}
+.top ul li.current {border-bottom: 2px solid #00aaff; color: #00aaff;}
+
+/*没有卡卷提示*/
+.cont .card + .nocardtips {display: none;}
+.nocardtips { width: 80%; color: #646464; height: 120px; opacity: 0.6; }
+.nocardtips .imgbox { width: 84px; height: 84px;}
+.nocardtips p {padding-top: 10px;}
+/*卡内容*/
+.cont {  display: none; padding-bottom: 20px; }
+.cont.current {display: block!important;}
+
+.cont .card { width: 93.75%; height: 100px; border-radius: 10px; margin-top: 10px;}
+.cont .cardtop {height: 65px;border-top-left-radius: 5px;border-top-right-radius:5px;}
+.cont .cardtop .imgbox { width: 32px; height: 32px;  top:16px; left: 20px;}
+.cont .cardtop .cardname {max-width: 60%;line-height: 18px;  height: 60px; top: 50%;margin-top: -30px;  left:60px; color: #fff; }
+.cont .cardtop .cachet {width:46px; top:5px; right:5px;}
+
+.cont .circleline {height: 4px; background: url("../images/card/circle.png") top left repeat-x;left:0;
+    bottom: 0;}
+.cont .timestamp { height: 34px; background-color: #fff; color:#8a8a8a; border-bottom-right-radius:5px;border-bottom-left-radius: 5px}
+.cont .timestamp p {display:inline-block; vertical-align: middle; padding-left: 10px; }
+
+/*具体卡变色 未使用*/
+.unused .washing .cardtop,.unused .dkq .cardtop,.unused .xjt .cardtop {background-color:#00aaff;}
+.unused .fuelfilling .cardtop {background-color:#e9af00;}
+
+/*过期*/
+.expired .cardtop { background-color: #777777;}
+
+/*已使用*/
+.used .washing .cardtop,.used .dkq .cardtop,.used .xjt .cardtop,.used .fuelfilling .cardtop {background-color:#777777;}
+
+
+

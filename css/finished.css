@@ -1,0 +1,62 @@
+body.finished {background-color: #eee;}
+/*完成上部分*/
+.tickbox {width: 24px; height: 24px; background-color: #039514; border-radius: 50%;}
+.tickbox .tick {width: 5px; height:10px; border-bottom: 2px solid #fff; border-right: 2px solid #fff;transform: rotate(45deg); -webkit-transform: rotate(45deg);-moz-transform: rotate(45deg); -ms-transform: rotate(45deg); margin-top: 4px;}
+
+/*支付完成上部分*/
+.pay-top { height: 80px;color:#039514 ; line-height: 24px;  background-color: #eee; }
+.pay-top .box {width: 140px; padding-top: 26px;}
+.pay-top .box p.txt {padding-left: 10px; }
+
+/*VIP服务*/
+.vipservice  {height: 95px;  line-height: 18px; }
+.vipservice a {color: #525050;}
+.vipservice p:first-child {padding-top:19px ; padding-bottom: 18px;}
+
+/*温馨提示*/ 
+.vip-tips {height:43px; background-color: #eee; color: #969696; line-height: 28px;padding-left: 10px;}
+
+/*提交地址*/
+.address-subbmitbox ul li {height: 40px; border-bottom: 1px solid #ddd; color: #525151; line-height: 40px;overflow: hidden;}
+.address-subbmitbox ul li input {height: 18px; width: 225px; margin-top: 10px; margin-left: 25px;color: #525151;border: none;  }
+.address-subbmitbox .savebtnbox {padding-bottom: 13px;}
+.address-subbmitbox .savebtn {display:block; width:163px; height:33px; background-color: transparent; margin-top: 10px; border: 1px solid #535353; line-height: 33px; color: #535353; border-radius: 3px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

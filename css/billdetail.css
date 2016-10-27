@@ -1,0 +1,29 @@
+/*我的爱车钱包 查看收支明细*/
+.billdetail dt { height: 40px;line-height: 20px; border-bottom: 1px solid #ececec;}
+.billdetail dt p {height:20px;}
+.billdetail dt .l {left: 10px; top: 50%;margin-top: -10px}
+.billdetail dt .r {right: 10px; top: 50%;margin-top: -10px}
+
+.billdetail .items {border-bottom:1px solid #ececec;padding-bottom: 8px;}
+.billdetail .items .price {color:#fc2626;line-height: 26px; padding-top: 5px;}
+.billdetail .items .txtbox { line-height: 16px;color: #828282;}
+
+.billdetail .items .txtbox .name { padding: 5px 0; max-width: 60%;}
+.billdetail .items .txtbox .timestamp {height: 12px;right: 0;top: 50%; margin-top:-6px; }
+
+/*.billdetail .items .txtbox .lbox {max-width: 60%;}*/
+
+/*.billdetail .items .txtbox .lbox,.billdetail .items .txtbox .rbox {height: 30px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+

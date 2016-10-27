@@ -1,0 +1,47 @@
+.servicename {height: 80px;border-bottom: 1px solid #dcdcec; }
+.servicename a {color: #252525;}
+.servicename .imgbox {left: 0; top: 10px; background-color: #000}
+.servicename .imgbox,.servicename .imgbox img {width: 60px; height: 60px;}
+.servicename .tbl-type {height: 50px; left: 70px; top: 4px; max-width: 60%}
+.servicename .price {  right: 0; top: 20px;}
+.servicename .price i {padding-left: 5px;}
+
+.evaluation {color: #888787;}
+.evaluation .anonymous.active {
+    color: #ed8a19; text-shadow: 0 0 5px #ed8a19;}
+.evaluation .anonymous { line-height: 13px; margin-top: 10px;}
+.evaluation .anonymous .tickbox { display: inline-block; width: 12px;height: 12px; border: 1px solid #d7d7d7;background-color: #ed8a19; border-radius: 2px; }
+.evaluation .anonymous .tickbox .tick {display: inline-block; width: 4px; height:8px;margin-bottom: 3px;}
+
+.evaluation .singlestar-box {margin-top: 20px;}
+.evaluation .singlestar-box li {  display: inline-block;width: 25px;height: 24px;}
+.evaluation .singlestar-box li.yellowstar {background:url("../images/evaluation/yellowstar.png") no-repeat; background-size: 100%;}
+.evaluation .singlestar-box li.darkstar {background:url("../images/evaluation/darkstar.png") no-repeat; background-size: 100%;}
+
+.evaluation .commenttagsbox {width:95%; }
+.evaluation .commenttagsbox .commenttags {margin-top: 10px;}
+.evaluation .commenttagsbox .tags {height: 31px;  padding:0px 8px ; line-height: 31px;  border: 1px solid #dcdcdc;border-radius: 3px; margin-bottom:10px; }
+.evaluation .commenttagsbox .tags.active { color: #ed8a19; border-color: #00abff !important; }
+.evaluation .commenttagsbox .others {height: 60px;text-align: left;  line-height: 14px;border-radius: 5px; color: #888787;  width: 98%; padding: 5px;}
+
+.confirm { display:block ; height: 45px; width: 80%; margin-top:40px; color: #fff;line-height: 45px; background-color:#00ABFF;border-radius: 5px; border: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+body {background-color: #f3f3f3;}
+
+.commentnav {  height: 40px; }
+.commentnav ul { display: flex; display: -webkit-flex; border-bottom:1px solid #dcdcdc; line-height: 39px;}
+
+.commentnav ul li {height: 39px; flex:1; -webkit-flex: 1;}
+.commentnav ul li p {display: inline-block; }
+.commentnav ul li.current {color: #f75c5c;}
+.commentnav ul li.current p { border-bottom: 1px solid #f75c5c; }
+
+.comment-cont {display: none;}
+.comment-cont.active {display: block;}
+
+.comment-cont dl { margin-bottom: 10px;}
+.comment-cont dl dt { height: 44px; line-height: 14px; color: #252525;}
+.comment-cont dl dt .imgbox {  width: 13px; height: 13px;}
+.comment-cont dl dt .tbl-type { height: 44px;}
+.comment-cont dl dt .tbl-type .storename {padding-left: 5px; padding-top: 2px;}
+
+.comment-cont dl dd.store ul li {  height: 88px; background-color:#f3f3f3; margin-bottom: 10px; }
+.comment-cont dl dd.store ul li.txtonly { height: 70px; line-height: 70px;}
+.comment-cont dl dd.store ul li.txtonly div.tbl-type {height: 70px; line-height: 16px; max-width: 70%;}
+.comment-cont dl dd.store ul li.txtonly .servicename {padding-left: 5px; }
+
+
+.comment-cont dl dd.store ul li:last-child {margin-bottom: 0;}
+.comment-cont dl dd.store a,.comment-cont dl dd.store{ color: #252525; }
+.comment-cont dl dd.store ul li .imgbox { padding-top: 10px;  }
+.comment-cont dl dd.store ul li .imgbox,.comment-cont dl dd.store .imgbox img { width: 68px;  height: 68px;}
+.comment-cont dl dd.store ul li .servicenamebox { height:30px ;color: #252525;left:88px;top: 10px;  max-width: 70%;}
+.comment-cont dl dd.store ul li .price {left:88px;bottom: 0; line-height: 18px; }
+
+.comment-cont dl dd.payment {height: 40px;border-bottom: 1px solid #ececec; border-bottom: 1px solid #dcdcdc;
+    line-height: 40px; }
+.comment-cont dl dd.payment span {padding-left: 5px;}
+.comment-cont dl dd.payment i {padding-left: 5px; font-weight: 600;}
+
+.comment-cont dl dd.todobox { height: 44px; }
+.comment-cont dl dd.todobox a { display:block; border-radius: 5px; width: 64px; height: 23px; line-height: 23px; margin-top: 10px }
+.comment-cont dl dd.todobox a.toevalute {color: #f63535; border: 1px solid #f63535; margin-left: 10px }
+.comment-cont dl dd.todobox a.buyagain {color: #252525; border: 1px solid #252525;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

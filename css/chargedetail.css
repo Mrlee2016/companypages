@@ -1,0 +1,33 @@
+/*充值记录*/
+.top {border-bottom: 1px solid #ececec;}
+.top .box {padding-top: 24px;}
+.top .imgbox {width:25px; display: inline-block; }
+.top .cardname {color: #585858; display: inline-block; padding-left:10px; }
+.top .money {padding: 10px 0;}
+.top .status {color: #989898; padding-bottom: 10px;}
+
+.describe li {height: 26px;
+    color: #4b4b4b; }
+.describe li p.l {padding-left: 10px; }
+.describe li p.r {padding-right: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

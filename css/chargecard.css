@@ -1,0 +1,95 @@
+/*充值*/
+body {background-color: #dbdbdb; }
+
+.topnav {height: 45px; margin-bottom: 10px;}
+.topnav ul { display: flex;display: -webkit-flex; height: 45px;line-height: 45px;margin-bottom: 10px;}
+.topnav ul li {height: 45px; flex: 1;-webkit-flex: 1}
+.topnav ul li img {display: inline-block;width: 30px; margin-left: 5px;}
+.topnav ul li.current {color: #f73f3f; border-bottom: 2px solid #f73f3f; }
+
+.cont {display: none;}
+.cont.active {display: block;}
+.cont .addcard { height: 50px;line-height:56px;overflow:hidden; color: #373737; }
+.cont .addcard .corssbox { width: 14px; height: 14px;border:1px solid #1d2132;border-radius: 50%;margin:18px 10px 0 10px; }
+.cont .addcard .corssbox div {height: 0; width: 10px;border-bottom: 2px solid #1d2132;}
+.cont .addcard .corssbox div.v {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);}
+.cont .addcard .txt { margin-top: -1px; }
+.cont .introduction { padding: 10px;color: #383838;}
+.cont .chargecont .toptab { display: flex;padding:10px 0; display: -webkit-flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+
+.cont .chargecont .toptab li {height: 30px;flex: 1;-webkit-flex: 1}
+.cont .chargecont .toptab li:first-child {border-right:1px solid #ececec;line-height: 30px;}
+.cont .chargecont .toptab  .discount { color: #f65f5f;}
+.cont .chargecont .toptab li:last-child {line-height: 16px;}
+
+.cont .chargecont .toptab li.current {color: #41a4f0; }
+
+.cont .chargecont .t-tab-body .tab-items {display: none;}
+.cont .chargecont .t-tab-body .tab-items.active{display: block;}
+.cont .chargecont .t-tab-body .tab-items .moneybox { padding: 10px 0;}
+.cont .chargecont .t-tab-body .tab-items .moneybox li { width:30%; margin: 0 1.65% 10px; box-sizing: border-box;height: 60px;border: 1px solid #949494;border-radius: 5px;}
+.cont .chargecont .t-tab-body .tab-items .moneybox li p:first-child {padding: 9px 0;}
+.cont .chargecont .t-tab-body .tab-items .moneybox li.active {color: #00aaff; border-color: #00aaff;}
+
+/*服务承诺*/
+.cont .chargecont .t-tab-body .tab-items .servicepromise {padding-top:10px; border-top: 1px solid #ececec; display: flex;  display: -webkit-flex;}
+.cont .chargecont .t-tab-body .tab-items .servicepromise li {flex: 1; -webkit-flex: 1;}
+.cont .chargecont .t-tab-body .tab-items .servicepromise li .imgbox { width: 40px;}
+.cont .chargecont .t-tab-body .tab-items .servicepromise li p { padding: 10px 0;}
+
+.cont .chargecont .t-tab-body .tab-items .chargenowbox {background-color: #dbdbdb;padding-top:10px;}
+.cont .chargecont .t-tab-body .tab-items .chargenow { display:block;width: 90%; height: 40px; background-color:#00aaff;border:none;border-radius: 5px; color: #fff; }
+.cont .chargecont .t-tab-body .tab-items .protocal {color: #6d6d6d;  padding: 10px 0; padding-left:5%; }
+.cont .chargecont .t-tab-body .tab-items .protocal i { color: #00aaff;  }
+
+
+/*加油卡套餐*/
+.cont .chargecont .t-tab-body .tab-items.combobox {padding-top: 10px; padding-bottom: 10px;}
+.cont .chargecont .t-tab-body .tab-items .combo {height: 135px;margin-top:10px; background-color:#f1f1f1; width: 93.75%; border-radius: 5px; }
+.cont .chargecont .t-tab-body .tab-items .combo:first-child {margin-top: 0;}
+.cont .chargecont .t-tab-body .tab-items .combo .comboname {padding: 10px 0; border-bottom: 1px solid #ececec;}
+.cont .chargecont .t-tab-body .tab-items .combo .l {padding-left: 10px;max-width: 60%;}
+.cont .chargecont .t-tab-body .tab-items .combo .discount {color:#f73f3f; padding-top:15px; padding-bottom: 10px;}
+.cont .chargecont .t-tab-body .tab-items .combo .chargenow {width:90px;height: 40px;background-color: #fff;color:#f73f3f;line-height: 43px; margin: 10px;}
+.cont .chargecont .t-tab-body .tab-items .combo .r p { color:#909090;}
+
+.cont .chargecont .t-tab-body .checkrecord {color: #383838; padding:15px 0 20px 0;}
+.cont .chargecont .t-tab-body .checkrecord .imgbox{ display: inline-block; width: 13px; padding-right: 5px;}
+
+
+/*油卡充值*/
+.cont .passwordbox,.cont .idfycodebox { height: 44px; border-top: 1px solid #ececec; }
+.cont .passwordbox p,.cont .idfycodebox p {line-height: 44px; display: inline-block; padding-left: 10px;}
+.cont .passwordbox input,.cont .idfycodebox input { display: inline-block;height:44px; text-indent:10px;width: 90%;border: none;margin-left: 10px; }
+
+.cont.cardCharge .chargenowbox { background-color: #dbdbdb;padding-top:20px;}
+.cont.cardCharge .chargenow { display:block;width: 90%; height: 40px; background-color:#00aaff;border:none;border-radius: 5px; color: #fff; }
+.cont.cardCharge .protocal {color: #6d6d6d;  padding: 10px 0; padding-left:5%; }
+.cont.cardCharge .protocal i { color: #00aaff;  }
+.cont.cardCharge .tips {width:85%; color:#6d6d6d;padding-top: 10px;line-height: 20px;}
+.cont.cardCharge .tips p:first-child{padding: 10px;}
+
+.cont.cardCharge  .checkrecord {color: #383838; padding:20px 0; bottom: 0;left: 0;right: 0;}
+.cont.cardCharge  .checkrecord .imgbox{ display: inline-block; width: 13px; padding-right: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+.cont li {display: flex;display: -webkit-flex;padding: 10px;}
+.cont li .userimg { width: 50px; height: 50px;}
+.cont li .userimg .levelbox { width: 20px;height: 20px; right:-5px; bottom: -5px; border-radius: 50%; background-color: #ff9000;}
+.cont li .txtbox { flex: 3;-webkit-flex: 5;}
+.cont li .txtbox p { padding: 3px 12px;}
+.cont li .txtbox .username { color: #1d2132;}
+.cont li .txtbox .sevicename { color: #6b6b6b;}
+.cont li .money { flex: 2; -webkit-flex: 2;line-height: 50px; color:red;}
+.cont li .money span {color: #1d2132;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

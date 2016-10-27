@@ -1,0 +1,50 @@
+body {background-color: #dcdcdc;}
+
+.storeBox li {margin-bottom: 10px;}
+.storeBox li .store {display: -webkit-flex;display: flex; padding:10px;}
+.storeBox li .store .imgBox {display: inline-block; width: 70px;height: 70px; margin-right: 10px; }
+.storeBox li .store .imgBox img {height: 70px; height: 70px;}
+.storeBox li .store .txtBox {flex: 1; -webkit-flex: 1;overflow: hidden; }
+.storeBox li .store .storename {color: #000; padding: 5px 0;}
+.storeBox li .store .txtBox div .openingtime { display:inline-block;padding: 2px 5px;background-color:#00aaff; color: #fff; border-radius:10px; }
+.storeBox li .store .txtBox div .order { display: inline-block; width: 50px; height:24px; line-height: 27px; margin-top:3px;border: 1px solid #ff6600; color: #ff6600; border-radius: 3px;}
+
+.storeBox li .contract { display: flex; display: -webkit-flex;}
+.storeBox li .contract .nav {width: 30px;}
+.storeBox li .contract .nav img {width: 12px; height: 12px;}
+.storeBox li .contract .addr {flex: 1;-webkit-flex: 1; padding:10px 10px 10px 0px; border-right: 1px solid #d9d9d9;}
+.storeBox li .phone { width: 40px; }
+.storeBox li .phone img {width: 15px ; height: 15px;}
+.storeBox li .contract a {color: #666666;}
+
+	/*星级评论s*/
+.starbox { display:block; width: 62px; height: 12px; overflow: hidden;white-space: nowrap; background: url(./../images/star5.png) no-repeat; background-size: 100% 200%; background-position: 0 -12px; }
+.starvalue-box {width: 55px; height:12px; overflow: hidden; display: block;}
+.starvalue {display: inline-block; height: 12px; background: url(./../images/star5.png) no-repeat 0 0;background-size: 100% 200%; width: 63px; vertical-align: top;}
+/*url(/static/images/api/aiche/star5.png)*/
+.comment-score {padding-left: 3px; line-height: 12px; padding-top: 2px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

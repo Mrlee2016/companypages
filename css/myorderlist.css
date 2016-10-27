@@ -1,0 +1,86 @@
+body {background-color: #dcdcdc;}
+
+/*头部导航*/
+.top {height: 44px; background-color: #fff; left: 0;top: 0; z-index: 9;}
+.top ul {display: flex; display:-webkit-flex; height: 44px; }
+.top ul li { height: 42px;flex: 1; line-height: 44px;}
+.top ul li.current {border-bottom: 2px solid #00aaff; color: #00aaff;}
+
+.cont {display: none; margin-top:54px;}
+.cont.current {display: block;  }
+
+.cont.expired .serviceName p ,.cont.expired .order {background-color: #dcdcdc!important;}
+.cont.expired .order {border-color: #dcdcdc!important; color: #fff!important;}
+	/*没有卡卷提示*/
+
+.cont .card + .nocardtips {display: none;}
+.nocardtips { width: 80%; color: #646464; height: 120px; opacity: 0.6; }
+.nocardtips .imgbox { width: 84px; height: 84px;}
+.nocardtips p {padding-top: 10px;}
+
+.storeBox li {margin-bottom: 10px;}
+.storeBox li:last-child {margin-bottom: 0;}
+.storeBox li .store {display: -webkit-flex;display: flex; padding:10px;}
+.storeBox li .store .imgBox {display: inline-block; width: 70px;height: 70px; margin-right: 10px; }
+.storeBox li .store .imgBox img {width: 70px; height: 70px;}
+.storeBox li .store .txtBox {flex: 1; -webkit-flex: 1; overflow: hidden; }
+.storeBox li .store .storename {color: #000; padding: 5px 0;}
+.storeBox li .store .txtBox div .openingtime { display:inline-block;padding: 2px 5px;background-color:#00aaff; color: #fff; border-radius:10px; }
+.storeBox li .store .txtBox div .order { display: inline-block; width: 50px; height:24px; line-height: 27px; margin-top:3px;border: 1px solid #ff6600; color: #ff6600; border-radius: 3px;}
+
+.storeBox li .contract { display: flex; display: -webkit-flex;}
+.storeBox li .contract .nav {width: 30px;}
+.storeBox li .contract .nav img {width: 12px; height: 12px;}
+.storeBox li .contract .addr {flex: 1;-webkit-flex: 1; padding:10px 10px 10px 0px; border-right: 1px solid #d9d9d9;}
+.storeBox li .phone { width: 50px; }
+.storeBox li .phone img {width: 15px ; height: 15px;}
+.storeBox li .contract a {color: #666666;}
+
+.storeBox li .serviceCont { display: flex; display: -webkit-flex; padding: 0 10px;}
+.storeBox li .serviceCont .serviceName { display: inline-block; width:80px;  }
+.storeBox li .serviceCont .serviceName p {display: block; width: 85%; left:50%; top:7px; padding: 2px 0;
+	-webkit-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0);
+	-o-transform: translate(-50%,0);
+	transform: translate(-50%,0);color: #fff;background-color: #00aaff;border-radius: 15px;   }
+.storeBox li .serviceCont .serviceItems { flex: 1; -webkit-flex: 1;}
+.storeBox li .serviceCont .serviceItems p {display: inline-block; padding: 10px 0 10px 5px ; }
+
+
+
+	/*星级评论s*/
+.starbox { display:block; width: 62px; height: 12px; overflow: hidden;white-space: nowrap; background: url(./../images/star5.png) no-repeat; background-size: 100% 200%; background-position: 0 -12px; }
+.starvalue-box {width: 55px; height:12px; overflow: hidden; display: block;}
+.starvalue {display: inline-block; height: 12px; background: url(./../images/star5.png) no-repeat 0 0;background-size: 100% 200%; width: 63px; vertical-align: top;}
+/*url(/static/images/api/aiche/star5.png)*/
+.comment-score {padding-left: 3px; line-height: 12px; padding-top: 2px;}
+
+.qrBox .qrimg { width: 60%; margin: 10px auto;}
+.qrBox .orderInfor { display: flex;display: -webkit-flex; padding: 0 10px; color: #666666;}
+.qrBox .orderInfor p time {padding-left: 5px;}
+.qrBox .orderInfor p span {padding-left: 5px;}
+.qrBox .orderInfor .deadline,.qrBox .orderInfor .ordercode {padding: 5px 0;}
+.qrBox .orderInfor .txtBox { flex: 1; -webkit-flex: 1;}
+.qrBox .orderInfor .deleBtn { display:inline-block; width:80px;}
+.qrBox .orderInfor .deleBtn a {display: block;height: 40px;line-height: 43px; border-radius: 5px; border: 1px solid #ff6600; color: #ff6600;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

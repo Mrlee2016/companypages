@@ -1,0 +1,73 @@
+body {background-color: #dcdcdc;}
+.bluebg { background-color: #00aaff;}
+
+.top {color: #fff;}
+.top .top_message { padding:10px;}
+.top .top_message .l { display: inline-block; width: 50%;}
+.namebox { padding-left: 5px;}
+.top .top_message .useimg { width: 60px; height: 60px;}
+.top .top_message .useimg .levelimg {display: block; width: 20px; height: 20px; right: -5px; bottom: -5px; border-radius:50%; background-color:#ff9000; }
+
+.top .r {display: inline-block; margin-top: 10px;margin-right: 10px;}
+.top .r .imgbox { width: 40px; height: 40px;}
+.top .r .messagenum { display:block; min-width:16px;max-width: 30px; bottom: -5px;  right: -8px; line-height: 14px; padding:5px 2px 2px 2px;  background-color: red;border-radius:14px; }
+
+.top .addcar { padding-top: 20px; background: url("./../images/mywallet/carbg.png") center center no-repeat #00aaff;background-size: 90%;}
+.top .addcar {}
+.top .addcar .carSign { width: 70px; height: 70px; background-color: #fff; border-radius: 50%;}
+.top .addcar .carSign .imgbox { width: 58px; height: 58px; border-radius: 50%;}
+.top .addcar .carSign .imgbox img {border-radius: 50%;}
+
+.top .addcar .carSign .crossbox {width: 50px; height: 58px; border-radius: 50%;}
+.top .addcar .carSign .crossbox:before,.top .addcar .carSign .crossbox:after { position:absolute; content: ""; width: 50px; height: 3px; background-color: #0373ab; margin: 0 auto; top: 0;left: 0;bottom: 0;right: 0;margin: auto; }
+.top .addcar .carSign .crossbox:after {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);}
+
+.top .radianbtm {display: block; background-color:#00aaff ;  height: 20px;  width: 100%;  border-bottom-right-radius: 30% ;  border-bottom-left-radius: 30%;
+}
+.top .addcar .txtbox .carinfor p {padding:8px 0;}
+.top .addcar .txtbox .carinfor p.carname {color: #0373ab; padding-bottom: 0;}
+
+.servicebox {background-color: #dcdcdc;}
+.servicebox .bill {margin-bottom: 10px;}
+.servicebox .bill .l { display: inline-block; width: 72%;}
+.servicebox .bill .l  .arrow-right { height: 6px;width: 6px;right: -4px;top: 35px;background: #fff; border-color: #d9d9d9;}
+.servicebox .bill ul {display: flex;display: -webkit-flex;padding-top: 10px; border-right: 1px solid #ececec;}
+.servicebox .bill ul li {flex: 1;-webkit-flex: 1;}
+.servicebox .bill .l .imgbox { width: 30px; height: 30px; background: url("../images/mywallet/icons1.png")left top no-repeat;background-size: 947.222%;}
+.servicebox .bill .l .imgbox .messagenum {display:block;  top: -5px;
+	color: #fff; right: -8px; line-height: 14px; padding:5px 2px 2px 2px; min-width:16px; max-width: 30px; background-color: red;border-radius:14px;}
+.servicebox .bill .l li.toservice .imgbox {background-position: -126px 0;}
+.servicebox .bill .l li.toevalute .imgbox {background-position: -256px 0;}
+.servicebox .bill .l p { padding: 10px 0; color: #051b28; }
+
+.servicebox .bill .r { height: 78px; width: 23%; color: #051b28;}
+.servicebox .bill .r .imgbox {  width: 30px;  height: 30px; margin-top: 15px;}
+.servicebox .bill .r  .txt {padding-top: 5px;}
+
+.servicebox .mywallet .r {height: auto !important;}
+.servicebox .mywallet .l .arrow-right {height: 6px;width: 6px;right: -4px;top: 35px;background: #fff; border-color: #d9d9d9;}
+.servicebox .mywallet .l .num {padding-bottom: 0;}
+.servicebox .mywallet .r p { display:inline-block;  }
+
+.items { margin-bottom: 10px; overflow: hidden;}
+.items .item,.setting { padding: 5px 10px; color: #2c3235;}
+.items .item .imgbox,.setting .imgbox {width: 30px;height: 30px;border-radius: 50%; background: url("../images/mywallet/icons2.png") no-repeat #00aaff; background-size:73%; background-position: 4px 11px; }
+.items .item p, .setting p {padding-left: 5px;}
+.items .item .arrow-right,.setting .arrow-right { width: 8px; height: 8px;margin-top: 12px; margin-right:30px;}
+
+.items .item.carowner .imgbox {background-position: 4px -2px;}
+.items .item.carowner .imgbox {background-position: 4px -59px;}
+.items .item.share .imgbox {background-position: 4px -125px;}
+
+.settingbox { overflow: hidden;}
+.setting .imgbox {background-position: 5px -217px;}
+
+
+
+
+

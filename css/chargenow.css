@@ -1,0 +1,79 @@
+/*充值*/
+body {background-color: #dbdbdb; }
+
+.topnav {height: 45px; margin-bottom: 10px;}
+.topnav ul { display: flex;display: -webkit-flex; height: 45px;line-height: 45px;margin-bottom: 10px;}
+.topnav ul li {height: 45px; flex: 1;-webkit-flex: 1}
+.topnav ul li img {display: inline-block;width: 30px; margin-left: 5px;}
+.topnav ul li.current {color: #f73f3f; border-bottom: 2px solid #f73f3f; }
+
+.cont {display: none;}
+.cont.active {display: block;}
+.cont .addcard { height: 44px;line-height: 48px;overflow:hidden;color:#373737;}
+.cont .addcard .corssbox { width: 14px; height: 14px;border:1px solid #1d2132;border-radius: 50%;margin:13px 10px 0 10px; }
+.cont .addcard .corssbox div {height: 0; width: 10px;border-bottom: 2px solid #1d2132;}
+.cont .addcard .corssbox div.v {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);}
+.cont .addcard .txt { margin-top: -1px; }
+.cont .introduction { height:30px;}
+.cont .introduction .t_l {padding-left: 10px;}
+.cont .introduction .t_r {padding-right: 10px;}
+.cont .introduction .t_r a {color: #383838;}
+/*选择金额*/
+.cont .operationbox { padding: 10px; border-bottom: 1px solid #ececec;}
+.cont .selectmoneybox { height:50px; padding: 10px 0  }
+.cont .selectmoneybox .txt {width: 50%;}
+.cont .selectmoneybox .selectmoney {width: 200px;display: inline-block  }
+.cont .selectmoneybox .selectmoney .v,.cont .selectmoneybox .selectmoney .h { height: 2px;  width: 25px;background-color: #fff;}
+.cont .selectmoneybox .selectmoney .v {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);}
+.cont .selectmoneybox .minus,.cont .selectmoneybox .mid, .cont .selectmoneybox .add {height:50px;width: 50px; }
+.cont .selectmoneybox .mid {height:48px;width: 100px;border-top: 1px solid #00aaff;border-bottom: 1px solid #00aaff;}
+.cont .selectmoneybox .minus,.cont .selectmoneybox .add {background-color:#00aaff;  }
+.cont .selectmoneybox .minus {border-bottom-left-radius:5px;border-top-left-radius:5px; }
+.cont .selectmoneybox .add {border-bottom-right-radius:5px;border-top-right-radius:5px; }
+.cont .selectmoneybox .mid {overflow: hidden;}
+.cont .selectmoneybox .mid .slidebox {  height: 48px;  width: 100%;   overflow: hidden;}
+.cont .selectmoneybox .mid ul {height:192px;  width: 100px;  left: 0;  top: 0; transition: all linear 100ms;}
+.cont .selectmoneybox .mid ul li { width: 100%; height: 48px;
+    overflow: hidden; }
+.cont .selectmoneybox .mid ul li p {line-height:52px;}
+
+
+.operationbox .selecttimebox { height: 50px; border: 1px solid #00aaff;border-radius: 5px; margin: 10px 0;}
+.operationbox .selecttimebox .r,.operationbox .selecttimebox .l {height: 50px; display: inline-block;}
+.operationbox .selecttimebox .l {width:50%; line-height: 50px; border-right: none;  color: #383838; }
+.operationbox .selecttimebox .l span{color: red; padding-left: 20px;}
+.operationbox .selecttimebox .r {width: 52px; height: 52px; background-color:#00aaff;right: 0;top: -1px;border-bottom-right-radius: 5px;border-top-right-radius: 5px;}
+.operationbox .selecttimebox .r .arrow-down {display:block; width: 20px;height: 20px;border-right: 2px solid #fff; border-bottom: 2px solid #fff; margin-top: 10px; }
+
+.operationbox .servicedetail {padding: 10px 0;}
+.operationbox .servicedetail p {display: inline-block;color:#383838;}
+
+.price {color: red;padding: 10px 0;padding-right: 10px }
+.price del {padding-left: 15px; color: #ccc;}
+
+.cont .chargenowbox {background-color: #dbdbdb;padding-top:20px;}
+.cont .chargenow { display:block;width: 90%; height: 40px; background-color:#00aaff;border:none;border-radius: 5px; color: #fff; }
+.cont .protocal { color: #6d6d6d;  padding: 10px 0; padding-left:5%; }
+.cont .protocal i { color: #00aaff;  }
+
+/*弹出框*/
+._modalDialog {min-width: 320px;}
+.popContent {display: none;}
+.selectTimePop {   border-radius: 5px;}
+.selectTimePop .tit {padding: 10px;}
+.selectTimePop ul li {  height: 45px; border-bottom: 1px solid #ececec;  line-height: 45px; padding-left: 10px;}
+.selectTimePop ul li:last-child {border-radius: 5px;}
+.selectTimePop ul li.selected {color: #00aaff;}
+.selectTimePop ul li span {padding-left: 20px;  color: red;}
+
+

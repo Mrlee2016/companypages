@@ -1,0 +1,77 @@
+.pricebox { color: red; padding: 0 20px ;}
+.pricebox p {padding:20px 0;}
+.pricebox p span { color: #2c3235; padding-left: 5px}
+
+.pricebox .pricedetail { display: block; width: 90px; height: 30px; line-height: 30px; margin-top: -15px; color: #686868; z-index: 2;}
+
+.cont .timestamp {padding:5px 10px; background-color: #e8e8e8;}
+.cont .item ul {display: flex;display: -webkit-flex;}
+.cont .item ul li { padding: 10px 0; line-height: 16px;}
+.cont .item ul li.money {flex: 1;-webkit-flex: 1;}
+.cont .item ul li.money.add {color: red;}
+.cont .item ul li.name {flex: 3;-webkit-flex: 3;}
+.cont .item ul li.time {flex: 2;-webkit-flex: 2;
+	color: #6b6b6b;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

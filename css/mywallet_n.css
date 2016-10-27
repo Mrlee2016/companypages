@@ -1,0 +1,167 @@
+/*顶部*/
+.top {background-color:#00aaff;}
+.top .tagbox {display: inline-block;height: 20px; width: 75px; background-color:#0384c4;border-radius: 10px; margin-top: 18px; margin-right: 40px }
+.top_user .l {height: 60px;
+	width: 50%;}
+.top_user {
+	height: 60px;
+	left: 50%;
+	padding-top: 9px;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);color: #fff; }
+.top_user div {vertical-align: middle;}
+.top .tagbox .imgbox {display:inline-block; height: 20px; width: 20px; background-color:#ff9000; border-radius: 50%; }
+.top .tagbox .txt { display: inline-block;
+	right:4px;
+	top:3px;
+	/*-webkit-transform: scale(0.8);*/
+	/*-moz-transform: scale(0.8);*/
+	/*-ms-transform: scale(0.8);*/
+	/*-o-transform: scale(0.8);*/
+	/*transform: scale(0.8);*/
+}
+
+.top .userimg {display: block;
+	width: 60px;height:60px ; }
+.top .username { display:block;
+	height:60px;
+	width: 50%;
+	right: 0;
+	top: 9px}
+.top .username p {padding-left: 38px;margin-top: 18px;}
+
+.top .progressbar ul { padding: 0 10px;
+	color: #0384c4;}
+.top .progressbar ul li {display: inline-block; margin-left: -20px;
+	width: 33%;}
+.top .progressbar ul li:first-child {margin-left:0;
+	 }
+.top .progressbar ul li.active {
+	color: #fff;}
+.top .progressbar ul li:last-child {width: auto}
+
+.top .progressbar ul li .levelbox {display: inline-block; height: 62px; width: 50px;line-height: 20px; }
+.top .progressbar ul li .levelbox .points {padding-top: 3px;}
+.top .progressbar ul li .imgbox { width: 20px; height: 20px; background-color:#ff9000;border-radius: 50%; border: 2px solid #0384c4;z-index: 1;margin-bottom: 5px; }
+.top .progressbar ul li .imgbox:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 6px solid #0384c4;
+	position: absolute;
+	left: 3px;
+	bottom: -6px;
+}
+
+.top .progressbar ul li progress::-webkit-progress-bar { background: transparent; }
+.top .progressbar ul li progress{ display: inline-block; height: 15px;
+	width: 82%;
+	top: 24px;
+	left:35px;
+	z-index: 0;
+	background-color: #0384c4;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;  }
+ .top .progressbar ul li progress::-webkit-progress-value { background-color: #ffcb00 }
+
+.top_point:before {border-color:#36bcff; }
+.top_point { margin-top: 5px;  box-sizing: border-box;}
+.top_point li:first-child {border-right: 1px solid #36bcff;}
+.top_point li { display:inline-block; box-sizing: border-box; width: 49%;   color: #fff;}
+.top_point li p {padding:15px 0;}
+
+/*我的特权模块*/
+.myprivilege {overflow: hidden;}
+.myprivilege a {background-color: #dcdcdc; color: #2c3235; overflow: hidden; }
+.myprivilege h3 {padding: 5px 10px; background-color: #dcdcdc;}
+
+.myprivilege .item { padding:5px 10px;}
+.myprivilege .item .imgbox { display:inline-block; width: 30px; height:30px; background: url("../images/mywallet/privilege.png") no-repeat;background-size: 100%;background-position: 0 0;
+}
+.myprivilege .item p { display: inline-block; padding-left: 5px;}
+
+/*对应特权*/
+.myprivilege .upgrade .imgbox {background-position: 0 -54px;}
+.myprivilege .cards .imgbox {background-position: 0 -116px;}
+.myprivilege .points .imgbox {background-position: 0 -176px;}
+.myprivilege .customservice .imgbox {background-position: 0 -236px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

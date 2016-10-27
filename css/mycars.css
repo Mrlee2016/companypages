@@ -1,0 +1,40 @@
+body {background-color: #f3f3f3;}
+.mycars ul li {height:88px; border-radius: 5px; background-color: #fff;margin-top: 10px;  }
+.mycars ul li .imgbox {width:30px;height: 20px; left:10px;right: auto;}
+.mycars ul li .carsname { height: 30px;  left: 50px;top:15px; line-height: 13px; max-width: 80%;  color: #1d2132;}
+.mycars ul li .cartype { left:50px;top: 34px; line-height: 12px;  color: #1d2132;}
+.mycars ul li .carnum { left:50px;bottom: 29px; line-height: 12px; color: #47484b;}
+.mycars ul li .miles { left:50px; bottom:12px; color: #47484b;}
+.mycars ul li .arrow-right {width: 10px;height: 10px;right: 10px;left: auto;}
+
+.mycars .addbtn { height: 88px; border-radius: 5px; margin-top: 10px; }
+.mycars .addbtn .crossbox { width: 44px; height: 44px; border: 1px solid #a8a9ad; border-radius: 50%; top: 10px; bottom: auto;}
+.mycars .addbtn .crossbox .l, .mycars .addbtn .crossbox .h { width: 80%; height: 1px ; background-color:#a8a9ad;}
+.mycars .addbtn .crossbox .l { -webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg); transform: rotate(90deg);}
+.mycars .addbtn p.txtbox { bottom: 10px;top:auto; color: #47484b;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

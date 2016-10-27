@@ -1,0 +1,143 @@
+/*顶部计时器s*/
+.seckill .timebox {height: 32px; background-color:  #eeeded;}
+.seckill .timebox p.start {line-height: 32px; color: #444;}
+
+.seckill .timebox p.count-time { height: 15px; margin-left: 14px; margin-top: 4px;}
+.seckill .timebox p.count-time span { display: inline-block;width:28px; height: 24px; background-color: #676565; border-radius: 3px; line-height: 24px; color: #fff; letter-spacing: 1px;  }
+.seckill .timebox p.count-time i {margin-left: 2px; margin-right: 2px;}
+
+/*设置提醒*/
+.seckill .setAlock { width: 86px; height: 22px; background-color:#434343 ; border-radius: 3px; line-height: 22px; color: #fff; margin-top: 5px;}
+.seckill .setAlock .clock {width:12px; height: 14px;  margin-left: 8px; margin-top: 4px; margin-right: 4px;}
+/*顶部计时器e*/
+
+/*秒杀产品列表s*/
+.product-container ul.product-list li { height: 110px ; border-bottom: 1px solid #dcdcdc;  }
+.product-container ul.product-list li .imgbox {width: 90px; height: 90px; padding-top: 10px; }
+
+.product-container ul.product-list li .txtbox {width: 67.5%; line-height: 16px; margin-left: 9px; }
+
+
+
+.product-container ul.product-list li .packageNmae {color: #201f1f; padding-top: 10px; padding-bottom: 7px; padding-left: 100px;  }
+.product-container ul.product-list li .detail { color:#474747; line-height: 18px; left: 100px; top: 32px; }
+
+/*尺寸兼容*/
+@media only screen and (max-width:360px ) {
+	/*.product-container ul.product-list li .detail { width: 260px;}*/
+}
+
+
+.product-container ul.product-list li .buynow { width: 80px; height: 24px; line-height: 24px; color: #fff; left: 100px; bottom: 10px; border: none;  font-family:"microsoft yahei"; }
+.product-container ul.product-list li .now {background-color: #fc2525; border-radius: 3px; }
+.product-container ul.product-list li .coming {background-color: #00aaff; border-radius: 3px;}
+
+.product-container ul.product-list li .pricebox {line-height: 18px; right: 0; bottom: 5px; }
+.product-container ul.product-list li .pricebox .price {padding-right: 9px; color: #fc0000; }
+.product-container ul.product-list li .pricebox .old-price {color: #919090; margin-top: 2px; }
+
+/*秒杀产品列表e*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

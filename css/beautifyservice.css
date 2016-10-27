@@ -1,0 +1,207 @@
+body.beautystore {background-color: #f3f3f3;}
+
+/*顶部排序按钮*/
+ 
+ul.sortbox {height: 44px; border-bottom: 1px solid #DCDCDC; z-index: 9;min-width: 320px; max-width: 640px; top: 0;left: auto;}
+ul.sortbox li {width: 25%;height:24px; box-sizing: border-box; line-height:24px; border-right: 1px solid #DCDCDC; float: left; margin-top:11px; } 
+ul.sortbox li .arrow-down {width: 8px; height: 8px; display: inline-block;margin-top: 5px; margin-left: 5px;}
+ul.sortbox li .arrow-up {width: 8px; height: 8px; display: inline-block;margin-top: 10px; margin-left: 5px;}
+
+ul.sortbox li:last-child {border-right: none;}
+ul.sortbox li i {margin-left: -13px;}
+ul.sortbox li.addr-sort .imgbox {width: 13px; height: 12px; margin-top: 5px;}
+
+/*左边筛选*/
+.slidebar-leftbox {top:0; right: 0;margin-top: 45px;  z-index: 9; background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; display: none;}
+.slidebar-left {width:200px; height:77%;  line-height: 24px;top:0; right: 0;  }
+.slidebar-left dl dt,.slidebar-left dl dd {height: 24px;}
+.slidebar-left p.tit {line-height: 30px;height: 30px; }
+.slidebar-left p.tit,.slidebar-left dl dt,.slidebar-left dl dd {border-bottom: 1px solid #DCDCDC; padding-left: 10px;}
+/*车保姆商家服务内容s*/
+.store-cont {z-index: 8; margin-top: 44px;}
+.store {height: 108px; border-bottom: 1px solid #dcdcdc;}
+.store div.txtbox {padding-left: 10px; line-height: 16px;}
+.store div.imgbox {width: 79px; height: 79px; border: 1px solid #dcdcdc; }
+.store div.imgbox.storeimg {margin-top: 14px;}
+  
+/*星级评论s*/
+.store .star-container {display: block;}
+.store .star-container, .list-container .starbox {width: 74px; height: 14px;   overflow: hidden;white-space: nowrap;}
+.store .starbox {left: 0; top: 0;}
+.store .starbox ul.star {width: 74px;}
+.store .starbox ul.star li {width: 12px; height: 12px; float: left; margin-right: 1px; background: url(../images/productlist/star.png) no-repeat;
+ background-size:217.074% 100% ;}
+/*星星调整*/
+.store .yellowstar ul.star li {background-position:  0 0 ;}
+.store .darkstar ul.star li {background-position:  -15px 0 ;}
+
+.store .yellowstar {width: 58px !important; overflow: hidden;}/*通过改变按宽度来改变星级*/
+.store .starbox ul.star li:last-child {margin-right: 0; }
+/*星级评论e*/
+
+/*评价得分*/
+.store .comment-score {display: block; line-height: 15px; padding-left: 5px;}
+.store .address-container {padding-top: 3px; color: #565657;}
+/*.store .address-container  .distance {padding-left: 15px;}*/
+
+.store p.addr {padding-top: 3px;}
+.store .txtbox .officaltime {line-height: 16px; padding-top: 3px;}
+.store p.officaltime i {padding-left: 5px;}
+
+/*环境配套s*/
+ .store .distance {color: #333; right:0; top: 0;}
+.store .storename,.store .distance { padding-top: 7px; padding-bottom: 5px; line-height: 16px;} 
+
+.store ul.environment {padding-top: 3px;}
+
+.store ul.environment li:last-child {margin-right: 0;}
+.store ul.environment li .imgbox {width:14px; height: 12px; background:url(../images/beautifyservice/seviceicon.png) no-repeat; background-size: 424% 100%; border: none; } 
+/*背景调整*/
+.store ul.environment li.wifi .imgbox {background-position: 0 0;}
+.store ul.environment li.card .imgbox {background-position: -16px 0;}
+.store ul.environment li.tea .imgbox {background-position: -30px 0;}
+.store ul.environment li.restroom .imgbox {background-position: -46px 0;}
+ 
+.store ul.environment li p.txt {  margin-top: -1px; color: #777;}
+
+.store ul.environment li {  margin-right: 10px; }
+.store ul.environment li p.txt { padding-left:5px ;}
+/*尺寸兼容*/
+@media only screen and (max-width:340px) {
+	.store p.addr {width: 205px;}	
+	  
+} 
+@media only screen and (min-width:341px) and (max-width:380px) {
+	.store p.addr {width: 230px;}	
+} 
+@media only screen and (min-width:381px) {
+	.store p.addr {width: 250px;}	
+}
+@media only screen and (min-width:390px) {
+	.store p.addr {width: 275px;}	 
+}
+@media only screen and (min-width:420px) {
+	.store p.addr {width: 300px;}	 
+}
+@media only screen and (min-width:450px) {
+	.store p.addr {width: 330px;}	 
+}
+@media only screen and (min-width:480px) {
+	.store p.addr {width: 365px;}	 
+}
+/*环境配套s*/
+
+.store-cont .service-items {height: 44px; border-bottom: 1px solid #dcdcdc; line-height: 44px;}
+.store-cont .service-items .service-name {width: 113px;}
+.store-cont .service-items .current-price {color: #f72f2f; width:55px;}
+.store-cont .service-items .old-price {color: #8d8f93;}
+.store-cont .service-items .pay { display:block; width: 58px;line-height: 29px; border:1px solid #f72f2f; height: 29px; color: #f72f2f; border-radius: 3px; margin-top: 7px; }
+
+.store-cont dl.storebox {margin-top: 10px;} 
+.store-cont dl.storebox:first-child {margin-top: 0;}
+
+/*车保姆商家服务内容e*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+body {background-color: #f3f3f3;}
+/*顶部评论*/
+.comment-top {margin-bottom: 10px;}
+.comment-top .comment-type {
+    height: 39px;
+    border-bottom: 1px solid #e5e3e3;
+
+}
+.comment-top ul li {
+    width: 25%;
+    height: 39px;
+    line-height: 15px;
+    padding-top: 7px;
+
+}
+.comment-top ul li.current .typetxt {
+    color: #ff0000;
+}
+/*评论概括*/
+.comment-sum p {
+    display: block;
+    padding: 5px;
+    border: 1px solid #f9c877;
+    border-radius: 5px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    
+}
+.comment-sum p.badpoint {background-color:#eee; border-color: #eee; color:#888787;  }
+
+/*用户具体的评论*/
+.single-comment ul li { padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.single-comment .accountname {
+    height: 44px;
+    border-bottom:1px solid #ececec;
+}
+.single-comment .accountname .imgbox {
+    width:22px;
+    height: 22px;
+    margin-top: 11px;
+}
+.single-comment .accountname .imgbox img {border-radius: 50%}
+
+.identification {height: 44px;
+    line-height: 16px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+/*星级评论s*/
+.single-comment .starbox { display:inline-block; width: 62px; height: 12px; margin-top:10px;margin-bottom: 7px; overflow: hidden;white-space: nowrap; background: url(/static/images/api/aiche/star5.png) no-repeat; background-size: 100% 200%; background-position: 0 -12px; }
+.single-comment .starvalue-box {width: 55px; height:12px; overflow: hidden; display: block;}
+.single-comment .starvalue {display: inline-block; height: 12px; background: url(/static/images/api/aiche/star5.png) no-repeat 0 0;background-size: 100% 200%; width: 63px; vertical-align: top;}
+.single-comment .comment-score {padding-left: 3px; line-height: 12px; padding-top: 2px;}
+
+/*评论描述*/
+.single-comment .description {
+    display: block;
+    padding-bottom: 5px;
+    line-height: 16px;
+    }
+.single-comment .servicename,.single-comment .timestamp {
+    color: #888787;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
