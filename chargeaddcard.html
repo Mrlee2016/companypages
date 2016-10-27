@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>充值详情</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/chargeaddcard.css?1.0.10" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+     
+  
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+ 
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>
+<body>
+<div class="wrapper center wid">
+    <form>
+    <div class="tabbox center">
+        <ul class="selection">
+            <li>
+                <input type="radio" checked="checked" name="card" id="sinopec" class="clearfix"/>
+                <label for="sinopec">
+                    <div class="imgbox rel center">
+                        <img src="images/charge/Sinopec.png" class="abs centre clearfix"/>
+                        <div class="tickbox abs">
+                            <div class="tick center"></div>
+                        </div>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="card" id="zsh"/>
+                <label for="zsh" class="clearfix" >
+                    <div class="imgbox rel center">
+                        <img src="images/charge/zsh.png" class="abs centre clearfix"/>
+                        <div class="tickbox abs">
+                            <div class="tick center"></div>
+                        </div>
+                    </div>
+                </label>
+
+            </li>
+        </ul>
+        <p class="f18 choice t_c">当前选择：<i>中国石化</i></p>
+    </div>
+        <div class="inputbox center f18">
+            <input class="cardnum wid " placeholder="请输入油卡号" maxlength="23" oninput="this.value=this.value.replace(/\D/g,'').replace(/....(?!$)/g,'$& ')"/>
+            <input class="checknum wid" placeholder="请确认油卡卡号" maxlength="23" oninput="this.value=this.value.replace(/\D/g,'').replace(/....(?!$)/g,'$& ')"/>
+            <p class="errortips f12">两次输入卡号不一致,请重新输入</p>
+        </div>
+
+        <input type="submit" class="submitbtn wid f18 center" value="保存"/>
+
+        <p class="t_c statement f13">仅限于自营站点发行的油卡！</p>
+    </form>
+</div>
+<script>
+    $(document).ready(function(){
+        var addCard = {
+            init:function(){
+                var $checkNum = $(".checknum"),
+                    $cardnum = $(".cardnum");
+
+                var self = this;
+                self.selectCard();
+                self.checkCardNum($cardnum,$checkNum);
+
+            },
+            selectCard:function(){
+                $("#sinopec").on("change",function(){
+                    $(".choice i").text("中国石化");
+                });
+                $("#zsh").on("change",function(){
+                    $(".choice i").text("中国石油");
+                });
+            },
+            checkCardNum:function($obj1,$obj2){
+                $(document).on("input",$obj2,function(){
+                    if($obj2.val().length==23){
+                      if($.trim($obj1.val()) != $.trim($obj2.val()))
+                      {
+                          $(".inputbox .errortips").show();
+                      } else $(".inputbox .errortips").hide();
+                    }else return;
+                });
+            }
+
+        };
+        addCard.init();
+    });
+</script>
+
+
+
+
+</body>
+</html>

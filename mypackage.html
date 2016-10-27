@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+    <title>我的卡包</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="./css/mypackage.css?1.0.13" />
+    <link href="../static/js/common/simply-toast/simply-toast.css">
+
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+    <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+    <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+
+    <script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script>-->
+        <!--var action = "/json/cardtest.json";-->
+        <!--mobiCore.ajax(action,null,)-->
+    <!--</script>-->
+</head>
+<body>
+
+<div class="wrapper center">
+    <div class="top fixed wid">
+        <ul class="t_c f16">
+            <li class="current unused">可用<i>(0)</i></li>
+            <li class="expired">已失效<i>(0)</i></li>
+        </ul>
+    </div>
+
+    <section class="cont unused  current left-in ">
+
+        <dl class="items">
+           <dt class="whitebg tbl-type">
+                <p class="tbl-cell t_l l f18">套餐卡名称</p>
+                <p class="tbl-cell t_r r f14">NO:123456</p>
+           </dt>
+            <dd class="whitebg border-bottom rel unable  " >
+                <label>
+                       <input type="checkbox" class=" abs" name="item1"  disabled >
+                       <div class="tickbox rel fl">
+                           <div class="tick abs centre"></div>
+                       </div>
+                       <div class="txtbox">
+                           <div class="title-line wid">
+                               <p class="servicename f14 fb elipse fl">
+                                   除积碳四次
+                               </p>
+                               <span class="fr f14 fb">剩余3次</span>
+                           </div>
+                           <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                       </div>
+                </label>
+            <dd class="whitebg border-bottom rel " >
+                <label>
+                    <input type="checkbox" class=" abs" name="item1"   >
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+            <dd class="whitebg border-bottom rel  " >
+                <label>
+                    <input type="checkbox" class=" abs" name="item1"   >
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+
+           </dd>
+            <dd class="whitebg border-bottom rel"   >
+                <label>
+                    <input type="checkbox" class="abs" name="item2" >
+                    <div class="tickbox rel fl">
+                            <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                            <div class="title-line wid">
+                                <p class="servicename f14 fb elipse fl">
+                                    违章代办10次
+                                </p>
+                                <span class="fr f14 fb">剩余3次</span>
+                            </div>
+                            <p class="tip f12"><span>限2次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+
+            </dd>
+
+        </dl>
+
+        <dl class="items">
+            <dt class="whitebg tbl-type">
+            <p class="tbl-cell t_l l f18">套餐卡名称</p>
+            <p class="tbl-cell t_r r f14">NO:123456</p>
+            </dt>
+            <dd class="whitebg border-bottom rel unable  " >
+                <label>
+                    <input type="checkbox" class=" abs" name="item1"  disabled >
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+
+            </dd>
+            <dd class="whitebg border-bottom rel"   >
+                <label >
+                    <input type="checkbox" class="abs" name="item2" >
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次test
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+
+            </dd>
+
+        </dl>
+
+        <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c hidden">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+
+    </section>
+    <section class="cont expired " >
+        <dl class="items">
+            <dt class="whitebg tbl-type">
+            <p class="tbl-cell t_l l f18">套餐卡名称</p>
+            <p class="tbl-cell t_r r f14">NO:123456</p>
+            </dt>
+            <dd class="whitebg border-bottom rel  ">
+                <label >
+                    <input  type="checkbox" class="abs" disabled >
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+            </dd>
+
+            <dd class="whitebg border-bottom rel  ">
+                <label>
+                    <input  type="checkbox" class="abs" disabled >
+
+                    <div class="tickbox rel fl">
+                        <div class="tick abs centre"></div>
+                    </div>
+                    <div class="txtbox">
+                        <div class="title-line wid">
+                            <p class="servicename f14 fb elipse fl">
+                                除积碳四次
+                            </p>
+                            <span class="fr f14 fb">剩余3次</span>
+                        </div>
+                        <p class="tip f12"><span>限1次/月</span> <span class="timeout fr">2016.06.16~2016.10.16</span></p>
+                    </div>
+                </label>
+            </dd>
+
+
+        </dl>
+
+        <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c hidden">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+
+    </section>
+    <a class="selectStore wid f20 fixed t_c " href="selectStore.html" >
+         选择商家
+    </a>
+    <a class="addCard wid f20 fixed t_c" href="bindServiceCard.html" >添加服务卡</a>
+
+</div>
+    <script>
+        $(document).ready(function(){
+            var tipshtml = '<div class="nocardtips abs centre">\
+                    <div class="imgbox">\
+                    <img src="images/card/tipsimg.png"/>\
+                    </div>\
+                    </div>';
+            $(document).on("click", ".top ul li",function(){
+                var index = $(this).index();
+                $(this).addClass("current").siblings().removeClass("current");
+                var $current_cont = $(".cont").eq(index);
+                $current_cont.addClass("current").siblings().removeClass("current");
+            });
+
+
+
+            $(document).on("click", ".cont.unused .items",function(){
+
+                if($(this).find("input:checked").length){
+                    $(".selectStore, .addCard").addClass("moveLeft");
+                    $(this).siblings().find("input").removeAttr("checked");
+                    if($(this).hasClass("clicked")){
+                        return;
+                    } else {
+                        $(this).addClass("clicked");
+                    }
+                } else $(".selectStore, .addCard").removeClass("moveLeft");
+            });
+
+            $(document).on("click", ".cont.expired dd",function(){
+                mobiCore.fn.alert('此卡券已经过期~');
+            });
+
+//            去掉底部边框
+            $(".cont .items").each(function(){
+               $(this).find("dd").last().removeClass("border-bottom");
+            });
+
+            // 没有优惠券提示
+            function noCoupons($obj, tips){
+                $ojb.html(tipshtml).append("<p>"+tips+"</p>");
+            }
+        });
+    </script>
+
+</body>
+</html>

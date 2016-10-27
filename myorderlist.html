@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>我的卡单</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/myorderlist.css?1.0.2" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+     
+  
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+ 
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>
+<body>
+<div class="wrapper center">
+    <div class="top fixed wid">
+        <ul class="t_c f16">
+            <li class="current unused">待服务</li>
+            <li class="expired">已过期</li>
+        </ul>
+    </div>
+    <section class="cont unused  current left-in  current">
+        <ul class="storeBox">
+            <li >
+                <div class="store whitebg">
+                    <div class="imgBox">
+
+                          <img src="./images/nearstore_05.png"/>
+
+                    </div>
+                    <div class="txtBox whitebg">
+                        <p class="storename f18 elipse fb">车保姆-江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站</p>
+                        <span class="starbox rel " star-data="3.2">
+                                    <span class="starvalue-box">
+                                        <i class="starvalue"></i>
+                                    </span>
+                         </span>
+
+                        <div class="clearfix whitebg">
+                            <p class="openingtime f12 t_l"><time>9:00</time>-<time>22:00</time></p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contract rel border-top whitebg">
+                    <div class="nav rel ">
+                        <a href="javascript:void(0)">
+                             <img src="./images/navSignal.png" class="abs centre" />
+                        </a>
+                    </div>
+
+                    <p class="addr f14">
+                        <a href="javascript:void(0)">
+                        10.24km  麻涌镇大步村兴业大路1号（大步公园对面，即原车盟美容中心）
+                        </a>
+                    </p>
+                    <div class="phone rel">
+                        <a href="tel:13800138000">
+                            <img src="./images/phone.png" class="abs centre" />
+                        </a>
+                    </div>
+                </div>
+                <div class="serviceCont border-top rel  whitebg">
+                    <div class="serviceName rel">
+                        <p class="abs t_c wid f13">订单服务</p>
+                    </div>
+                    <div class="serviceItems f12">
+                        <p>违章代办</p><p>免拆除积碳</p><p></p> <p>违章代办</p><p>免拆除积碳</p><p></p><p>违章代办</p><p>免拆除积碳</p>
+                    </div>
+
+
+                </div>
+
+                <div class="qrBox">
+
+                    <div class="center qrimg">
+                        <img src="./images/qr.png" />
+                    </div>
+
+
+
+                    <div class="orderInfor whitebg">
+                        <div class="txtBox f12">
+                            <p class="deadline">到期时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordertime">下单时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordercode">订单编码:<span>ECOG2385OM</span></p>
+                        </div>
+                        <div class="deleBtn rel">
+                            <a class="wid abs centre f14 t_c">删除订单</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="store whitebg">
+                    <div class="imgBox">
+
+                        <img src="./images/nearstore_05.png"/>
+
+                    </div>
+                    <div class="txtBox whitebg">
+                        <p class="storename f18 elipse fb">车保姆-江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站</p>
+                        <span class="starbox rel " star-data="3.2">
+                                    <span class="starvalue-box">
+                                        <i class="starvalue"></i>
+                                    </span>
+                         </span>
+
+                        <div class="clearfix whitebg">
+                            <p class="openingtime f12 t_l"><time>9:00</time>-<time>22:00</time></p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contract rel border-top whitebg">
+                    <div class="nav rel ">
+                        <a href="javascript:void(0)">
+                            <img src="./images/navSignal.png" class="abs centre" />
+                        </a>
+                    </div>
+
+                    <p class="addr f14">
+                        <a href="javascript:void(0)">
+                            10.24km  麻涌镇大步村兴业大路1号（大步公园对面，即原车盟美容中心）
+                        </a>
+                    </p>
+                    <div class="phone rel">
+                        <a href="tel:13800138000">
+                            <img src="./images/phone.png" class="abs centre" />
+                        </a>
+                    </div>
+                </div>
+                <div class="serviceCont border-top rel  whitebg">
+                    <div class="serviceName rel">
+                        <p class="abs t_c wid f13">订单服务</p>
+                    </div>
+                    <div class="serviceItems f12">
+                        <p>违章代办</p><p>免拆除积碳</p><p></p> <p>违章代办</p><p>免拆除积碳</p><p></p><p>违章代办</p><p>免拆除积碳</p>
+                    </div>
+
+
+                </div>
+
+                <div class="qrBox">
+
+                    <div class="center qrimg">
+                        <img src="./images/qr.png" />
+                    </div>
+
+
+
+                    <div class="orderInfor whitebg">
+                        <div class="txtBox f12">
+                            <p class="deadline">到期时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordertime">下单时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordercode">订单编码:<span>ECOG2385OM</span></p>
+                        </div>
+                        <div class="deleBtn rel">
+                            <a class="wid abs centre f14 t_c">删除订单</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c hidden">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+    </section>
+
+    <section class="cont expired " >
+        <ul class="storeBox">
+            <li >
+                <div class="store whitebg">
+                    <div class="imgBox">
+
+                        <img src="./images/nearstore_05.png"/>
+
+                    </div>
+                    <div class="txtBox whitebg">
+                        <p class="storename f18 elipse fb">车保姆-江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站</p>
+                        <span class="starbox rel " star-data="3.2">
+                                    <span class="starvalue-box">
+                                        <i class="starvalue"></i>
+                                    </span>
+                         </span>
+
+                        <div class="clearfix whitebg">
+                            <p class="openingtime f12 t_l"><time>9:00</time>-<time>22:00</time></p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contract rel border-top whitebg">
+                    <div class="nav rel ">
+                        <a href="javascript:void(0)">
+                            <img src="./images/navSignal.png" class="abs centre" />
+                        </a>
+                    </div>
+
+                    <p class="addr f14">
+                        <a href="javascript:void(0)">
+                            10.24km  麻涌镇大步村兴业大路1号（大步公园对面，即原车盟美容中心）
+                        </a>
+                    </p>
+                    <div class="phone rel">
+                        <a href="tel:13800138000">
+                            <img src="./images/phone.png" class="abs centre" />
+                        </a>
+                    </div>
+                </div>
+                <div class="serviceCont border-top rel  whitebg">
+                    <div class="serviceName rel">
+                        <p class="abs t_c wid f13">订单服务</p>
+                    </div>
+                    <div class="serviceItems f12">
+                        <p>违章代办</p><p>免拆除积碳</p><p></p> <p>违章代办</p><p>免拆除积碳</p><p></p><p>违章代办</p><p>免拆除积碳</p>
+                    </div>
+
+
+                </div>
+
+                <div class="qrBox">
+
+                    <div class="center qrimg">
+                        <img src="./images/qr.png" />
+                    </div>
+
+
+
+                    <div class="orderInfor whitebg">
+                        <div class="txtBox f12">
+                            <p class="deadline">到期时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordertime">下单时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordercode">订单编码:<span>ECOG2385OM</span></p>
+                        </div>
+                        <div class="deleBtn rel">
+                            <a class="wid abs centre f14 t_c">删除订单</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="store whitebg">
+                    <div class="imgBox">
+
+                        <img src="./images/nearstore_05.png"/>
+
+                    </div>
+                    <div class="txtBox whitebg">
+                        <p class="storename f18 elipse fb">车保姆-江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站江门双龙站</p>
+                        <span class="starbox rel " star-data="3.2">
+                                    <span class="starvalue-box">
+                                        <i class="starvalue"></i>
+                                    </span>
+                         </span>
+
+                        <div class="clearfix whitebg">
+                            <p class="openingtime f12 t_l"><time>9:00</time>-<time>22:00</time></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contract rel border-top whitebg">
+                    <div class="nav rel ">
+                        <a href="javascript:void(0)">
+                            <img src="./images/navSignal.png" class="abs centre" />
+                        </a>
+                    </div>
+
+                    <p class="addr f14">
+                        <a href="javascript:void(0)">
+                            10.24km  麻涌镇大步村兴业大路1号（大步公园对面，即原车盟美容中心）
+                        </a>
+                    </p>
+                    <div class="phone rel">
+                        <a href="tel:13800138000">
+                            <img src="./images/phone.png" class="abs centre" />
+                        </a>
+                    </div>
+                </div>
+                <div class="serviceCont border-top rel  whitebg">
+                    <div class="serviceName rel">
+                        <p class="abs t_c wid f13">订单服务</p>
+                    </div>
+                    <div class="serviceItems f12">
+                        <p>违章代办</p><p>免拆除积碳</p><p></p> <p>违章代办</p><p>免拆除积碳</p><p></p><p>违章代办</p><p>免拆除积碳</p>
+                    </div>
+
+
+                </div>
+
+                <div class="qrBox">
+
+                    <div class="center qrimg">
+                        <img src="./images/qr.png" />
+                    </div>
+
+
+
+                    <div class="orderInfor whitebg">
+                        <div class="txtBox f12">
+                            <p class="deadline">到期时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordertime">下单时间:<time class="date">2016-11-10</time><time class="time">12:05:10</time></p>
+                            <p class="ordercode">订单编码:<span>ECOG2385OM</span></p>
+                        </div>
+                        <div class="deleBtn rel">
+                            <a class="wid abs centre f14 t_c">删除订单</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+        <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c hidden">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+    </section>
+
+
+
+
+</div>
+<script>
+    //星星星级调整
+    $(document).ready(function(){
+
+
+        plugins.businessStar2.start($(".starbox"));
+
+        var tipshtml = '<div class="nocardtips abs centre">\
+                    <div class="imgbox">\
+                    <img src="images/card/tipsimg.png"/>\
+                    </div>\
+                    </div>';
+        $(document).on("click", ".top ul li",function(){
+            var index = $(this).index();
+            $(this).addClass("current").siblings().removeClass("current");
+            var $current_cont = $(".cont").eq(index);
+            $current_cont.addClass("current").siblings().removeClass("current");
+        });
+
+
+        // 没有优惠券提示
+        function noCoupons($obj, tips){
+            $ojb.html(tipshtml).append("<p>"+tips+"</p>");
+        }
+
+    });
+
+</script>
+</body>
+</html>

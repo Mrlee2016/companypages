@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+    <title>优惠券</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/coupon.css?1.0.10" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+    <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+    <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+
+    <script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script>-->
+        <!--var action = "/json/cardtest.json";-->
+        <!--mobiCore.ajax(action,null,)-->
+    <!--</script>-->
+</head>
+<body>
+
+
+
+<div class="wrapper center">
+    <div class="top">
+        <ul class="t_c f16">
+            <li class="current unused">未使用<i>(0)</i></li>
+            <li class="expired">已过期<i>(0)</i></li>
+            <li class="used">已使用<i>(0)</i></li>
+        </ul>
+    </div>
+    <section class="cont unused wid current left-in">
+        <div class="card washing center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/washing.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">10元洗车抵扣券</p>
+                </div>
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+        <div class="card fuelfilling center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/addoil.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">加油重置1000元抵10元现金券</p>
+                </div>
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <div class="card dkq center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/diinfected.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">20元臭氧消毒抵扣券</p>
+                </div>
+
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+        <div class="card xjt center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/xjt.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">150元除积碳抵扣券</p>
+                </div>
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <!--此处可以抽离出来用js判断插入-->
+
+        <div class="nocardtips abs centre t_c">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+
+    </section>
+    <section class="cont expired wid ">
+
+
+
+
+        <div class="card washing center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/washing.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">10元洗车抵扣券</p>
+                </div>
+
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <div class="card fuelfilling center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/addoil.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">加油重置1000元抵10元现金券</p>
+                </div>
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <div class="card dkq center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/diinfected.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">20元臭氧消毒抵扣券</p>
+                </div>
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+        <div class="card xjt center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/xjt.png"/>
+                </div>
+
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">150元除积碳抵扣券</p>
+                </div>
+
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+    <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+
+    </section>
+    <section class="cont used wid right-in">
+
+        <div class="card washing center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/washing.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">10元洗车抵扣券</p>
+                </div>
+
+                <div class="cachet abs">
+                    <img src="images/card/usedtag.png"/>
+                </div>
+
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <div class="card fuelfilling center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/addoil.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">加油重置1000元抵10元现金券</p>
+                </div>
+
+                <div class="cachet abs">
+                    <img src="images/card/usedtag.png"/>
+                </div>
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <div class="card dkq center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/diinfected.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">20元臭氧消毒抵扣券</p>
+                </div>
+
+                <div class="cachet abs">
+                    <img src="images/card/usedtag.png"/>
+                </div>
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+        <div class="card xjt center">
+            <div class="cardtop rel">
+                <div class="imgbox abs">
+                    <img src="images/card/xjt.png"/>
+                </div>
+                <div class="cardname f18 abs tbl-type">
+                    <p class="tbl-cell">150元除积碳抵扣券</p>
+                </div>
+
+
+                <div class="cachet abs">
+                    <img src="images/card/usedtag.png"/>
+                </div>
+                <div class="circleline wid abs"></div>
+            </div>
+            <div class="timestamp">
+                <p class="f12">使用期限：2016.06.16-2016.07.16</p>
+            </div>
+        </div>
+
+        <!--此处可以抽离出来用js判断插入-->
+        <div class="nocardtips abs centre t_c">
+            <div class="imgbox center">
+                <img src="images/card/tipsimg.png"/>
+            </div>
+            <p class="f15">亲,还没有优惠券~</p>
+        </div>
+
+    </section>
+
+
+
+
+</div>
+    <script>
+        $(document).ready(function(){
+            var tipshtml = '<div class="nocardtips abs centre">\
+                    <div class="imgbox">\
+                    <img src="images/card/tipsimg.png"/>\
+                    </div>\
+                    </div>';
+            $(document).on("click", ".top ul li",function(){
+                var index = $(this).index();
+                $(this).addClass("current").siblings().removeClass("current");
+                var $current_cont = $(".cont").eq(index);
+                $current_cont.addClass("current").siblings().removeClass("current");
+            });
+
+
+            // 没有优惠券提示
+            function noCoupons($obj, tips){
+                $ojb.html(tipshtml).append("<p>"+tips+"</p>");
+            }
+
+
+        });
+    </script>
+
+</body>
+</html>

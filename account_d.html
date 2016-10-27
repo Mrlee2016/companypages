@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>我的爱车钱包</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"//>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+     
+  
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+ 
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>
+<body class="account"> 
+<div class="wrapper center">     
+	<section class="acount-top">
+		<div class="center-10px">
+			<div class="infor-box rel">
+				<div class="imgbox rel  fl">
+					<i class="centre abs"></i>
+				</div>
+				<p class="account-nickname f16 abs">
+					透明的小白
+				</p>
+				<p class="account-points f14 abs">
+					积分：<span>100</span>
+				</p>
+				<p class="account-balance f14 abs">账户余额(元)<span class="f16">16080.59</span></p> 
+				<div class="account-bedge fr "></div>    
+			</div>
+			
+		</div>
+		<!--优惠券 、卡券-->
+		<ul class="coupons f16">
+				<li class="discount">
+					<div class="iconbox fl"></div>
+					<p class="txtbox fl rel">优惠券(<i class="msg-num">666</i>)
+						 
+					</p>
+				</li>
+				<li class="carcoupon">
+					<div class="iconbox fl"></div>
+					<p class="txtbox fl rel">我的卡券
+						 (<i class="msg-num">666</i>)
+					</p>
+				</li> 
+		</ul>
+	</section>
+  	
+  	<section class="account-cont wid">
+  		<dl class="itemsbox f16 clearfix">
+  			<dt class="items clearfix">
+  				<div class="center-10px">
+  					<div class="imgbox fl"></div>
+  					<p class="fl">订单</p>
+  				</div>
+  			</dt>
+  			<dd  class="toPay">
+  				<div class="imgbox center rel">
+  					<i class="num f12 abs  t_c elipse">
+  						5
+  					</i>
+  				</div>
+  				<p>待付款</p>
+  			</dd>
+  			<dd class="paied">
+  				<div class="imgbox center"></div>
+  				<p>已付款</p>
+  			</dd>
+  			<dd class="comment" >
+  				<div class="imgbox center rel">
+  					<i class="num f12 abs  t_c elipse">
+  						56451455
+  					</i>
+  				</div>
+  				<p>评论/送积分</p>
+  			</dd>
+  			<dd class="done">
+  				<div class="imgbox center"></div>
+  				<p>已完成</p>
+  			</dd> 
+  		</dl> 
+  		<dl class="itemsbox f16 reservation">
+  			<dt class="items clearfix ">
+  				<a href="javascript:void(0)">
+	  				<div class="center-10px">
+	  					<div class="imgbox fl"></div>
+	  					<p class="fl">预约订单</p>
+	  					<div class="arrow-right fr"></div>
+	  				</div>
+  				</a>
+  			</dt>
+  		</dl>
+  		<dl class="itemsbox f16 recomment">
+  			<dt class="items clearfix">
+  				<a href="javascript:void(0)">
+  				<div class="center-10px">
+  					<div class="imgbox fl"></div>
+  					<p class="fl">每日推荐</p>
+  					<div class="arrow-right fr"></div>
+  				</div>
+  				</a>
+  			</dt>
+  		</dl>
+  		<dl class="itemsbox f16 share-star">
+  			<dt class="items clearfix">
+  				<a href="javascript:void(0)">
+	  				<div class="center-10px">
+	  					<div class="imgbox fl"></div>
+	  					<p class="fl">分享达人，享分享收益</p>
+	  					<div class="arrow-right fr"></div>
+	  				</div>
+  				</a>
+  			</dt>
+  		</dl>
+  		
+  		<dl class="itemsbox f16 car-friends">
+  			<dt class="items clearfix">
+  				<a href="javascript:void(0)">
+	  				<div class="center-10px">
+	  					<div class="imgbox fl"></div>
+	  					<p class="fl">汽车消费圈</p>
+	  					<div class="arrow-right fr"></div>
+	  				</div>
+  				</a>
+  			</dt>
+  		</dl>
+  		
+  		<dl class="itemsbox f16 profit">
+  			<dt class="items clearfix">
+  				<a href="javascript:void(0)">
+	  				<div class="center-10px">
+	  					<div class="imgbox fl"></div>
+	  					<p class="fl">好友数量、收益</p>
+	  					<div class="arrow-right fr"></div>
+	  				</div>
+  				</a>
+  			</dt>
+  		</dl>
+  
+  	</section>
+  
+  		
+ 
+</div>
+
+</body>
+</html>

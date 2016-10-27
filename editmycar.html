@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+    <title>我的车型</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/editmycar.css?asdsasddf" />
+    <link rel="stylesheet" href="css/LCalendar.css">
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+
+    <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+    <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+    <script type="text/javascript"  src="js/LCalendar.min.js" />
+    <script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+</head>
+<body>
+<div class="wrapper center">
+    <section class="editcar">
+        <div class="carname whitebg rel">
+            <div class="center-10px tbl-type rel">
+                <div class="imgbox tbl-cell">
+                    <img src="images/selectcarbrand/audi.png"/>
+                </div>
+                <p class="tbl-cell txt f14">2015款sportback 40TFSI自动豪华</p>
+
+            </div>
+            <div class="arrow-right abs"></div>
+        </div>
+
+
+        <div class="center-10px inputbox f13">
+            <div class="timestamp  whitebg inputbox">
+                <p class="fl txt">购车时间</p>
+                <input readonly="readonly" placeholder="点击输入时间" class="fr t_c " id="calendar" data-lcalendar="1900-01-01,2300-01-29"/>
+            </div>
+            <div class="miles  whitebg inputbox">
+                <p class="fl txt">行驶里程(公里)</p>
+                <input placeholder="点击输入里程数" class="fr t_c"/>
+            </div>
+        </div>
+
+
+        <div class="center-10px illegalquery-box f13">
+            <p class="txt">违章查车推送</p>
+            <ul class="illegalquery whitebg">
+                <li>
+                    <p class="fl">车牌号码</p>
+                    <input placeholder="点击输入车牌号码" class="fl"/>
+
+                </li>
+                <li>
+                    <p class="fl">发动机号码</p>
+                    <input placeholder="点击输入发动机号" class="fl" />
+                    <div class="imgbox fr querytips">
+                        <img src="images/editmycar/helpcaution.png"/>
+                    </div>
+
+                </li>
+                <li>
+                    <p class="fl">车架号</p>
+                    <input placeholder="点击输入车架号"/>
+                    <div class="imgbox fr querytips">
+                        <img src="images/editmycar/helpcaution.png"/>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <input type="submit" value="确定" class="confirm center f16 t_c"/>
+
+    <div class="marsk fixed">
+        <div class="imgbox abs centre">
+            <img src="images/editmycar/queryhelp.jpg"/>
+        </div>
+    </div>
+
+
+    <script>
+      $(document).ready(function(){
+//          填写里程数
+          $(".miles input").blur(function(){
+            var miles = $(this).val();
+            var reg = /^[0-9]*$/;
+              if(!reg.test(miles))
+              {
+                 alert("只能输入正整数");
+                  $(this).val("");
+              }
+          });
+
+
+
+
+
+//填车架号提示
+          $(".querytips").click(function(){
+              $(".marsk").show();
+          });
+          $(".marsk").click(function(){
+              $(this).hide();
+          });
+
+//        选择时间
+          var calendar = new LCalendar();
+          calendar.init({
+              'trigger': '#calendar',//标签id
+              'type': 'date',//date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择
+              'minDate':'1900-1-1',//最小日期 注意：该值会覆盖标签内定义的日期范围
+              'maxDate':'2300-1-1'//最大日期 注意：该值会覆盖标签内定义的日期范围
+          });
+      });
+
+
+    </script>
+
+
+</div>
+</body>
+</html>

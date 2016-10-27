@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>充值详情</title>
+    <link rel="stylesheet" href="../static/css/api/common.css?1.0.0" />
+    <link rel="stylesheet" href="css/chargenow.css?1.0.6" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+     
+  
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+ 
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>
+<body>
+<div class="wrapper center main">
+    <section class="cont  onlineCharge  active">
+
+       <a href="chargeaddcard.html">
+           <div class="addcard whitebg f15 wid">
+               <div class="corssbox rel fl  ">
+                   <div class="v abs centre"></div>
+                   <div class="h abs centre"></div>
+               </div>
+               <p class="txt fl">添加加油卡</p>
+           </div>
+       </a>
+
+       <div class="introduction tbl-type f15 wid">
+           <p class="t_l tbl-cell">选择月充值金额和充值月数</p>
+           <p class="t_r  tbl-cell"><a href="javascript:void(0)">充值说明</a></p>
+       </div>
+
+       <div class="whitebg operationbox">
+            <div class="selectmoneybox wid tbl-type f14 t_r clearfix">
+                <p class="tbl-cell txt t_c">充值金额(元)</p>
+                <div class="selectmoney   t_r ">
+                    <div class="minus tbl-cell rel">
+                        <div class="h abs centre"></div>
+                    </div>
+                    <div class="mid tbl-cell t_c">
+                       <div class="slidebox f18 rel">
+                           <ul class="abs">
+                               <li class="selected"><p>100</p></li>
+                               <li class=""><p>200</p></li>
+                               <li class=""><p>300</p></li>
+                               <li class=""><p>500</p></li>
+                               <li class=""><p>1000</p></li>
+                           </ul>
+                       </div>
+
+                    </div>
+                    <div class="add tbl-cell rel">
+                        <div class="v abs centre"></div>
+                        <div class="h abs centre"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="selecttimebox center t_r f14 rel">
+                <div class="l fl t_c">
+                    <p months="3" discount="0.98">充值3个月<span class="f20">9.5折</span></p>
+                </div>
+                <div class="r abs ">
+                    <div class="arrow-down abs centre"></div>
+                </div>
+            </div>
+
+            <div class="servicedetail f14 clearfix">
+                <p class="fl">送价值<i>40</i>元服务卡</p>
+                <a href="javascript:void(0)"><p class="fr">服务卡详情</p></a>
+            </div>
+       </div>
+        <p class="price whitebg t_r f18">&yen;<i class="sum">294</i><del class="f15">&yen;<span class="oldSum">300</span></del></p>
+
+        <div class="wid chargenowbox">
+            <input type="submit" class="chargenow f18 center" />
+            <p class="protocal f13 ">充值即同意<a href="javascript:alert('请后端调用旧的说明')"><i>《加油卡充值服务协议》</i></a></p>
+        </div>
+
+    </section>
+
+   <div class="popContent">
+       <div class="selectTimePop whitebg  t_l">
+           <p class="tit f14">请选择充值月数</p>
+           <ul class="">
+               <li><p months="3" discount="0.98" class="f14">充值3个月<span class="f20">9.8折</span></p></li>
+               <li><p months="7" discount="0.97" class="f14">充值7个月<span class="f20">9.7折</span></p></li>
+               <li><p months="13" discount="0.95" class="f14">充值13个月<span class="f20">9.5折</span></p></li>
+           </ul>
+
+       </div>
+   </div>
+
+
+    <script>
+        $(document).ready(function(){
+            var selectCharge = {
+                init:function(){
+                    _self = this;
+                    _self.selectMoney();
+                    _self.selectTime();
+                    _self.countMoney();
+
+                },
+                selectMoney:function(){
+                    var row = 0;
+                    var newmargin = null;
+                    var $selected = $(".slidebox ul li");
+                    $(document).on("click",".selectmoney .add",function(){
+//                      var oldmarin = parseInt($(".slidebox ul").css("top").replace("px",""));
+
+                        if(row < 4){
+                            row++;
+                            newmargin -= 48;
+                            $(".slidebox ul").css("top",newmargin);
+                            $selected.eq(row).addClass("selected").siblings().removeClass("selected");
+                            sum();
+                        } else  return;
+                    });
+
+                    $(document).on("click",".selectmoney .minus",function(){
+//                        var oldmarin = parseInt($(".slidebox ul").css("top").replace("px",""));
+                        if(row > 0){
+                            row--;
+                            newmargin += 48;
+
+                            $(".slidebox ul").css("top",newmargin);
+                            $selected.eq(row).addClass("selected").siblings().removeClass("selected");
+                            sum();
+                        } else  return;
+                    });
+                },
+                selectTime:function(){
+                    var hmtl = $(".popContent").html();
+                    $(document).on("click",".selecttimebox",function(){
+                        mobiCore.fn.dialog(hmtl,"80%",null);
+                    });
+                    $(document).on("click",".selectTimePop ul li",function(){
+                        $(this).addClass("selected").siblings().removeClass("selected");
+                        var innerhtml = $(this).html()
+                        $(".selecttimebox .l").html(innerhtml);
+                        $("._modalDialog").addClass("hidden");
+                        sum();
+                    });
+
+                },
+                countMoney:function(){
+                    sum();
+                }
+            };
+            selectCharge.init();
+            function sum(){
+                var price = parseInt($(".slidebox .selected p").text());
+                var months = parseInt($(".selecttimebox .l p").attr("months"));
+                var discount = parseFloat($(".selecttimebox .l p").attr("discount"));
+                var oleSum =  price*months;
+                var sum = Math.round(price*months*discount);
+                $(".price .oldSum").html(oleSum);
+                $(".price .sum").html(sum);
+
+            }
+        });
+    </script>
+</div>
+
+</body>
+</html>

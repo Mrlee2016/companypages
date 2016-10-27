@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>爱车宝</title>
+	<!--<link rel="stylesheet" href="/static/css/card/base.css" />-->
+	<link rel="stylesheet" href="../static/css/api/common.css?1.0.13" />
+	<link rel="stylesheet" href="css/paylist.css?1.0.24" />
+
+	<script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+      
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+
+    
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+ 
+    
+    
+</head>
+<body class="paylist">
+<div class="main wrapper center">
+	<form>
+	<section class="store whitebg">
+		<div class="storenamebox clearfix wid">
+			<div class="center-10px clearfix">
+				<div class="imgbox fl"> 
+				</div>
+				<div class="storename f14 fl tbl-type">
+					<p class="tbl-cell">南城-宝之汇汽车生活馆 </p>
+				</div>
+				<p class="comment-score f12 fr"><i>4.5</i>分</p>
+				<span class="starbox rel fr " star-data = "3.5">
+					<span class="starvalue-box">
+						<i class="starvalue"></i>
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="orderdetail">
+			<div class="center-10px clearfix">
+				<div class="imgbox">
+					<img src="images/paylist/order_03.png" />
+				</div>
+				<div class="txtbox">
+					<div class="servicename f14 tbl-type">
+						<p class="tbl-cell">镀膜-白金镀膜</p>
+					</div>
+					<p class="f13 price normal">￥<i class="f15"><b>589</b></i></p>
+
+				</div>
+				  
+			</div>
+		</div>
+		<div class="totalbox wid">
+			<div class="center-10px clearfix"><p class="f14 fr">合计:<span class="f12">￥<i class="f18 fb totalprice normal">589</i><i class="f18 fb totalprice useCard">0</i></span></p></div>
+		</div>
+	</section>
+	<section class="paymentmode whitebg wid">
+
+		<dl>
+			<dt class="f15">
+				<div class="center-10px ">
+					<p>支付方式</p>
+				</div>
+			</dt>
+			<dd class="alipay clearfix wid">
+				<label for="ali">
+
+					<div class="center-10px clearfix">
+						<div class="imgbox fl"></div>
+						<p class="fl f14 payname">支付宝</p>
+
+						<input type="radio" class="payitems" name="payitems" id="ali" checked="checked" >
+						<div class="tickbox fr rel ">
+							<div class="tick abs centre"></div>
+						</div>
+
+					</div>
+
+				</label>
+
+			</dd>
+			<dd class="wechatpay active wid">
+					<label for="wechat">
+						<div class="center-10px clearfix">
+							<div class="imgbox fl"></div>
+							<p class="fl f14 payname">微信支付</p>
+							<input type="radio" class="payitems" name="payitems" id="wechat" >
+
+								<div class="tickbox fr rel clearfix ">
+									<div class="tick abs centre"></div>
+								</div>
+
+						</div>
+					</label>
+
+			</dd>
+
+
+		<dd class="unionpay  wid">
+				<label for="union">
+					<div class="center-10px clearfix">
+						<div class="imgbox fl"></div>
+						<p class="fl f14 payname">银联支付</p>
+						<input type="radio" name="payitems" class="payitems" id="union" >
+						<div class="tickbox fr rel ">
+							<div class="tick abs centre"></div>
+						</div>
+
+					</div>
+				</label>
+			</dd>
+		
+		</dl>
+	</section>
+	<section class="pay-discount f14">
+		<div class="discount-choicebox wid clearfix">
+			<input type="checkbox" name="balance" id="balance"/>
+			<label for="balance">
+				<div class="whitebg choicename active">
+					<div class="center-10px">
+						<div class="discountCardtit tbl-type fl">
+							<p class="tbl-cell">可用余额25元</p>
+						</div>
+
+						<div class="tickbox fr rel"   id="useCoupon">
+							<div class="tick abs centre"></div>
+						</div>
+
+					</div>
+				</div>
+			</label>
+
+		</div>
+		<div class="discount-choicebox wid clearfix">
+			<input type="checkbox" name="points" id="points"/>
+			<label for="points">
+				<div class="whitebg choicename active">
+					<div class="center-10px">
+						<div class="discountCardtit tbl-type fl">
+							<p class="tbl-cell">可用积分100</p>
+						</div>
+
+						<div class="tickbox fr rel"   id="usePoints">
+							<div class="tick abs centre"></div>
+						</div>
+
+					</div>
+				</div>
+			</label>
+
+		</div>
+		<div class="discount-choicebox wid clearfix">
+			<input type="checkbox" name="balance" id="discountCard"/>
+
+			<div class="whitebg choicename active">
+				<div class="center-10px">
+					<div class="discountCardtit tit tbl-type fl ">
+						<p class="tbl-cell unselected">使用优惠券</p>
+						<p class="tbl-cell selected"><i class="name">使用优惠券2</i><i class="arrow-down"></i></p>
+					</div>
+					<label for="discountCard">
+					<div class="tickbox fr rel" id="usediscountCard">
+						<div class="tick abs centre"></div>
+					</div>
+					</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="discount-choicebox wid clearfix">
+			<input type="checkbox" name="serviceCard" id="serviceCard"/>
+				<div class="whitebg choicename active">
+					<div class="center-10px">
+						<div class="serviceCardtit tit tbl-type fl">
+							<p class="tbl-cell unselected">使用服务卡抵扣</p>
+							<p class="tbl-cell selected"><i class="name">使用服务卡抵扣2</i><i class="arrow-down"></i></p>
+						</div>
+						<label for="serviceCard">
+							<div class="tickbox fr rel" id="useserviceCard">
+								<div class="tick abs centre"></div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+		</div>
+
+
+
+	</section>
+	<div class="center-10px">
+		<input type="submit" value="立即支付" class="paynow f15 wid fb" />
+	</div>
+
+
+	<!--<div class="popMid fixed center " id="popMid">-->
+		<div class="popMid f15 " id="couponPop">
+			<h3 class="t_c tit f15">选择优惠券</h3>
+			<ul class="popcont couponPopcont f14" >
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						汽车钱包1元洗车券
+					</p>
+				</li>
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						汽车钱包12元修车券
+					</p>
+
+				</li>
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						汽车钱包15元美容券
+					</p>
+
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="popMid f15 " id="serviceCardPop">
+			<h3 class="t_c tit f15">选择服务卡</h3>
+			<ul class="popcont serviceCardcont f14" >
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						洗车卡
+					</p>
+				</li>
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						美容卡
+					</p>
+
+				</li>
+				<li class="clearfix wid tbl-type">
+					<p class="tbl-cell">
+						修车卡
+					</p>
+
+				</li>
+
+			</ul>
+		</div>
+
+	<!--</div>-->
+
+
+
+
+	</form>
+    
+</div>
+	<script>
+
+		$(document).ready(function(){
+//			星级评论
+			plugins.businessStar2.start($(".starbox"));
+
+//			优惠券
+			var coupon = {
+				init:function(){
+					var self = this;
+//					var $toggleBtn = $(".discount-choicebox .selected");
+					var $coupontit = $(".discountCardtit .selected");
+					self.showDialog($coupontit);
+					self.selectCoupon($coupontit);
+				},
+				showDialog:function($tabobj){
+					var html = $("#couponPop").html();
+					$tabobj.on("click",function(){
+						popMid = mobiCore.fn.dialog(html, "90%", null);
+ 					});
+				},
+				selectCoupon:function($des){
+					$(document).on("click",".couponPopcont li",function(){
+						var $src = $(this).find("p");
+						var $des2 = $des.find(".name");
+						var $this = $(this);
+						copyVal($src,$des2);
+						$this.addClass("selected").siblings(".selected").removeClass("selected");
+						setTimeout(function(){
+							$("._modalDialog ").addClass("hidden");
+						},500);
+ 					});
+				},
+			};
+			coupon.init();
+			function copyVal($src,$des){
+				var srcval = $src.text();
+				$des.text(srcval);
+			}
+
+//服务卡抵扣
+
+			var serviceCard = {
+				init:function(){
+					var self = this;
+					var $serviceCarddetail = $(".serviceCarddetail");
+					var $serviceCardtit = $(".serviceCardtit .selected");
+					self.selectBox();
+					self.showDialog($serviceCardtit);
+ 					self.selectCard($serviceCardtit);
+
+				},
+				selectBox:function(){
+					$("#useserviceCard").on("click",function(e){
+						if($("#serviceCard").is(":checked")){
+							$("#discountCard").parent().show();
+							$("#balance").parent().show();
+							$(".totalbox").find("span").removeClass("active");
+						} else if(!$("#serviceCard").is(":checked")){
+
+							$("#discountCard").parent().hide();
+							$("#balance").parent().hide();
+							$(".totalbox").find("span").addClass("active");
+						}else return false;
+					});
+				},
+				showDialog:function($tabobj){
+					var html = $("#serviceCardPop").html();
+					$tabobj.on("click",function(){
+						popMid = mobiCore.fn.dialog(html, "90%", null);
+					});
+				},
+ 				reset:function(){
+				},
+//				公用变色
+				selectCard:function($des){
+
+					$(document).on("click",".serviceCardcont li",function(){
+						var $src = $(this).find("p");
+						var $des2 = $des.find(".name");
+						var $this = $(this);
+						copyVal($src,$des2);
+						$(this).addClass("selected").siblings(".selected").removeClass("selected");
+						setTimeout(function(){
+							$("._modalDialog ").addClass("hidden");
+						},500);
+					});
+				},
+			};
+			serviceCard.init();
+
+		});
+
+
+
+
+
+	</script>
+</body>
+</html>

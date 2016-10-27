@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+    <title>评价</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/evaluation.css?v=1.0.4" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+
+    <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+    <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+
+    <script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<div class="wrapper center wid">
+    <section class="servicename wid clearfix">
+        <a href="javascript:void(0)">
+            <div class="center-10px rel">
+                <div class="imgbox abs">
+                    <!--默认图片有待王灏设计-->
+                    <img src="images/nearstore_05.png"/>
+                </div>
+                <div class="tbl-type f13 abs">
+                    <p class="tbl-cell">镀膜-白金镀膜镀膜-白金镀
+                        膜镀膜-白金镀膜</p>
+                </div>
+                <p class="price abs f14">&yen;<i class="f15">589</i></p>
+            </div>
+        </a>
+    </section>
+
+
+
+    <section class="evaluation">
+        <div class="f13 anonymous">
+            <p class="t_c">
+                <!--<span class="tickbox rel">-->
+                    <!--<i class="tick abs centre"></i>-->
+                <!--</span>-->
+                匿名评价
+            </p>
+
+        </div>
+        <ul class="singlestar-box t_c clearfix">
+            <li class="yellowstar starbox"></li>
+            <li class="yellowstar starbox"></li>
+            <li class="yellowstar starbox"></li>
+            <li class="yellowstar starbox"></li>
+            <li class="yellowstar starbox"></li>
+        </ul>
+        <div class="commenttagsbox center">
+            <p class="f13">请选择标签</p>
+            <!--后台根据触发替换标签内容即可-->
+            <div class="commenttags f14">
+                <p class="tags">很好的东西</p>
+                <p class="tags">很好的东西</p>
+                <p class="tags">很好的东士大夫西</p>
+                <p class="tags">很好的阿斯顿发放东西</p>
+            </div>
+            <textarea class="others">默认好评。</textarea>
+
+
+        </div>
+
+
+    </section>
+
+    <input type="submit" class="confirm f16 center" value="确定"/>
+
+
+
+
+
+</div>
+
+<script>
+    ;(function(){
+        $(document).ready(function(){
+
+            //    匿名评价选择
+            $(".anonymous").click(function(){
+                $(this).toggleClass("active");
+            });
+
+//            星级数选择
+
+            $(".singlestar-box").on("click",".starbox",function(){
+                $(this).addClass("yellowstar").removeClass("darkstar").prevAll().addClass("yellowstar").removeClass("darkstar");
+                $(this).nextAll().removeClass("yellowstar").addClass("darkstar");
+                var num = $(this).index();
+//                点击后每颗星对应的操作 从0开始
+                switch(num){
+                    case 0:alert("badtase");break;
+                    case 1:;
+                    case 2:alert("Soso");break;
+                    case 3:;
+                    case 4:alert("good!");break;
+                }
+
+            });
+
+
+//            评论标签选择
+
+            $(".commenttags").on("click",".tags",function(){
+                $(this).siblings().removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+
+
+
+        })
+    })();
+
+
+</script>
+
+
+
+</body>
+</html>

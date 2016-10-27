@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+    <title>选择品牌</title>
+    <link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/selectcarbrand.css?v=1.0.2" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+
+    <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+    <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+
+    <script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<div class="wrapper center">
+
+
+
+    <header class="wid clearfix t_c">
+        <div class="center-10px clearfix tbl-type  f14 ">
+            <div class="imgbox tbl-cell">
+                <img src="../static/images/card/carnanny/back.png"/>
+            </div>
+        </div>
+        <p class=" center f14">选择车品牌</p>
+    </header>
+
+
+    <section class="carbrand f13 wid clearfix ">
+
+
+        <div class="left ">
+            <div class="hotsalecarsbox whitebg">
+                <ul class="hotsalecars">
+                    <li>
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="carbrand-cont">
+                <dl>
+                    <dt class="f13 wid " id="brandletter_A">
+                    <div class="center-10px tbl-type">
+                        <p class="tbl-cell">A</p>
+                    </div>
+                    </dt>
+                    <dd class="wid">
+                        <a href="selectcars.html">
+                            <div class="center-10px tbl-type">
+                                <div class="imgbox tbl-cell rel">
+                                    <img src="images/selectcarbrand/audi.png" class="abs centre" />
+                                </div>
+                                <p class="brandname tbl-cell">奥迪</p>
+                            </div>
+                        </a>
+
+                    </dd>
+                </dl>
+            </div>
+
+
+        </div>
+
+        <div class="right letters f14 t_c whitebg">
+        </div>
+
+    </section>
+
+
+    <script>
+//        自动头填充字母表
+        letterTbl($(".letters"));
+        function letterTbl($obj){
+            for(var i=65; i<=90; i++){
+                var letter = String.fromCharCode(i);
+                var html = "<a href='#brandletter_"+letter+"'>"+letter+"<\/a>"
+                $obj.append(html);
+            }
+        }
+
+        var winH = mobiCore.window.height;
+        $(".carbrand .left,.carbrand .right").css("height",winH);
+
+
+
+
+
+    </script>
+
+
+
+</div>
+
+</body>
+</html>

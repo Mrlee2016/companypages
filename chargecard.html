@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+	<title>充值详情</title>
+    <link rel="stylesheet" href="../static/css/api/common.css?1.0.0" />
+    <link rel="stylesheet" href="css/chargecard.css?1.0.5" />
+    <link rel="stylesheet" href="../static/js/common/bxslider/jquery.bxslider.css"  charset="utf-8"/>
+    <script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+     
+  
+   <!-- <script type="text/javascript" src="../static/js/common/zepto.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="../static/js/common/fastclick.js"></script>
+    <script type="text/javascript" src="../static/js/common/spin.min.js"></script>
+    <script type="text/javascript" src="../static/js/common/simply-toast/simply-toast.js"></script>
+        <script type="text/javascript" src="../static/js/card/common.js"></script>
+    <script type="text/javascript" src="../static/js/common/mobi-core.js"></script>
+ 
+<script src="../static/js/common/bxslider/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>
+<body>
+<div class="wrapper center">
+    <div class="topnav f15 t_c whitebg">
+        <ul>
+            <li class="current">网上充值<img src="images/card/discount.png" /></li>
+            <li>充值卡充值</li>
+        </ul>
+    </div>
+
+    <section class="cont  onlineCharge  active">
+        <a href="chargeaddcard.html">
+            <div class="addcard whitebg f15 wid">
+                <div class="corssbox rel fl  ">
+                    <div class="v abs centre"></div>
+                    <div class="h abs centre"></div>
+                </div>
+                <p class="txt fl">添加加油卡</p>
+            </div>
+        </a>
+        <p class="t_r introduction f15">充值说明</p>
+
+        <div class="chargecont ">
+            <ul class="toptab whitebg f15 t_c">
+                <li class="current">即时充值</li>
+                <li>
+                    <P>套餐充值</P>
+                    <p class="discount f12">9.5折送千元礼包</p>
+                </li>
+            </ul>
+            <div class="t-tab-body ">
+                <div class="tab-items whitebg active">
+                    <div class="center-10px clearfix">
+                        <ul class="moneybox t_c wid clearfix ">
+                            <li class="fl active">
+                                <p class="f18">100元</p>
+                                <p class="f12">9.9折 立省1元</p>
+                            </li>
+                            <li class="fl">
+                                <p class="f18">200元</p>
+                                <p class="f12">9.9折 立省2元</p>
+                            </li>
+                            <li class="fl">
+                                <p class="f18">500元</p>
+                                <p class="f12">9.9折 立省5元</p>
+                            </li>
+                            <li class="fl">
+                                <p class="f18">1000元</p>
+                                <p class="f12">9.9折 立省10元</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="servicepromise wid t_c f16">
+                        <li>
+                            <div class="imgbox center">
+                                <img src="images/card/promise_08.png"/>
+                            </div>
+                            <p>快速到账</p>
+                        </li>
+                        <li>
+                            <div class="imgbox center">
+                                <img src="images/card/promise_03.png"/>
+                            </div>
+                            <p>专业人工客服</p>
+                        </li>
+                        <li>
+                            <div class="imgbox center">
+                                <img src="images/card/promise_05.png"/>
+                            </div>
+                            <p>支付安全保障</p>
+                        </li>
+                    </ul>
+
+                    <div class="wid chargenowbox">
+                         <input type="submit" class="chargenow f18 center" />
+                         <p class="protocal f13 ">充值即同意 <a href="javascript:alert('请后端调用旧的说明')"><i>《加油卡充值服务协议》</i></a></p>
+                    </div>
+
+                </div>
+
+                <!--套餐充值-->
+                <div class="tab-items whitebg wid combobox">
+                    <div class="combo center">
+                        <p class="comboname f14 t_c clearfix">3个月加油套餐</p>
+                       <div class="l fl f16">
+                           <p class="f30  discount">9.8<i class="f13">折</i></p>
+                           <p>送服务卡价值799元</p>
+                       </div>
+                       <div class="r fr f14 t_c">
+                            <a href="chargenow.html" type="button" class="chargenow fb ">立即充值</a>
+                            <p class="f12 ">已经充值9999人</p>
+                      </div>
+                    </div>
+                    <div class="combo center">
+                        <p class="comboname f14 t_c clearfix">7个月加油套餐</p>
+                        <div class="l fl f16">
+                            <p class="f30 discount">9.7<i class="f13">折</i></p>
+                            <p>送服务卡价值1699元</p>
+                        </div>
+                        <div class="r fr f14 t_c">
+                            <a href="chargenow.html" type="button" class="chargenow fb">立即充值</a>
+                            <p class="f12 ">已经充值9999人</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <a href="chargerecord.html"><p class="checkrecord f12 t_c"><span class="imgbox"><img src="images/card/checkrecord.png"/></span>查看充值记录</p></a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="cont cardCharge ">
+        <a href="chargeaddcard.html">
+            <div class="addcard whitebg f15 wid">
+                <div class="corssbox rel fl  ">
+                    <div class="v abs centre"></div>
+                    <div class="h abs centre"></div>
+                </div>
+                <p class="txt fl">添加加油卡</p>
+            </div>
+        </a>
+
+        <div class="passwordbox whitebg f15 wid ">
+            <!--<p class="txt fl">输入充值卡密码</p>-->
+            <input type="password" class="f15" placeholder="输入充值卡密码"/>
+        </div>
+        <div class="idfycodebox whitebg f15 wid ">
+            <!--<p class="txt fl">输入验证码</p>-->
+            <input type="text" class="f15"  placeholder="输入验证码" />
+        </div>
+        <div class="wid chargenowbox">
+            <input type="submit" class="chargenow f18 center" />
+            <p class="protocal f13 ">充值即同意<a href="javascript:alert('请后端调用旧的说明')"><i>《加油卡充值服务协议》</i></a></p>
+        </div>
+        <div class="tips f12 t_c center">
+            <p>温馨提示</p>
+            <p>中石油充值仅支持中石油自营油站办理的个人记名卡，企业非增票的主卡（不支持BP标识加油卡）</p>
+        </div>
+
+        <a href="chargerecord.html"><p class="checkrecord f12 t_c fixed"><span class="imgbox"><img src="images/card/checkrecord.png"/></span>查看充值记录</p></a>
+    </section>
+
+    <script>
+
+        var chargeCard = {
+            init:function(){
+                var _self = this;
+
+                _self.topNav();
+                _self.onlineChargeChoice();
+                _self.selectMoney();
+            },
+            topNav:function(){
+                var $cont = $(".cont");
+
+                $(document).on("click",".topnav li",function(){
+                    var index = $(this).index();
+                    $(this).addClass("current").siblings().removeClass("current");
+                    $cont.eq(index).addClass("active").siblings().removeClass("active");
+                });
+
+            },
+            onlineChargeChoice:function(){
+                var $items = $(".t-tab-body .tab-items");
+                $(document).on("click",".chargecont .toptab li",function(){
+                    var index = $(this).index();
+                    $(this).addClass("current").siblings().removeClass("current");
+                    $items.eq(index).addClass("active").siblings().removeClass("active");
+                });
+            },
+            selectMoney:function(){
+
+                $(document).on("click",".moneybox li",function(){
+
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            }
+
+        };
+        chargeCard.init();
+    </script>
+
+
+
+</div>
+
+</body>
+</html>
